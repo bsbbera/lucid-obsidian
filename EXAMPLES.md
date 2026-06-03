@@ -1,6 +1,6 @@
-# Aurora — examples
+# Lucid — examples
 
-Paste this whole note into Obsidian (reading view + Aurora selected) to see every feature. Works the same
+Paste this whole note into Obsidian (reading view + Lucid selected) to see every feature. Works the same
 under the companion **Atelier** theme — only the skin changes.
 
 ---
