@@ -1,5 +1,5 @@
 /* ============================================================================
-   Aurora — an installable Obsidian theme
+   Lucid — an installable Obsidian theme
    "Obsidian Glass" palette (violet + teal), dark-first with a light variant.
    Recreates the MyWiki-vault.html mockup on Obsidian's real DOM + variables,
    and folds in all the vault's custom snippet features (multi-column callouts,
@@ -31,12 +31,12 @@
    ========================================================================== */
 /* @settings
 
-name: Aurora
+name: Lucid
 id: mywiki-glass
 settings:
     -
         id: mwg-info
-        title: Aurora
+        title: Lucid
         description: "Obsidian Glass palette (violet + teal). All colors, fonts and layout below drive the whole theme and its custom features."
         type: info-text
         markdown: false

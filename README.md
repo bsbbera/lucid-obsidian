@@ -1,4 +1,4 @@
-# Aurora
+# Lucid
 
 A clean, **Apple-style frosted-glass** Obsidian theme — translucent cards with real backdrop blur, a calm
 **blue accent** with **teal italics**, and crisp **Segoe UI** typography. Dark-first with a bright light
@@ -18,13 +18,13 @@ utilities so any run of text can be restyled inline — including an **Apple-sty
 
 ## Install
 
-**From Obsidian (once published):** Settings → Appearance → Themes → **Manage** → search **Aurora**.
+**From Obsidian (once published):** Settings → Appearance → Themes → **Manage** → search **Lucid**.
 
-**Manually:** copy `manifest.json` + `theme.css` into `<vault>/.obsidian/themes/Aurora/`, then pick
-**Aurora** under Settings → Appearance.
+**Manually:** copy `manifest.json` + `theme.css` into `<vault>/.obsidian/themes/Lucid/`, then pick
+**Lucid** under Settings → Appearance.
 
 > Requires Obsidian 1.5.0+. Install the **Style Settings** plugin to customise colours, fonts, sizes, the
-> default-style dropdowns, the gradient ramp, and the glass blur. Aurora's defaults use **system fonts
+> default-style dropdowns, the gradient ramp, and the glass blur. Lucid's defaults use **system fonts
 > (Segoe UI)**, so it works offline out of the box.
 
 ---
@@ -92,7 +92,7 @@ See **[EXAMPLES.md](EXAMPLES.md)** for a ready-to-paste note exercising every fe
 ---
 
 ## Customising
-**Settings → Style Settings → Aurora** — accent & colours, **italic/emphasis colour**, **font dropdowns**,
+**Settings → Style Settings → Lucid** — accent & colours, **italic/emphasis colour**, **font dropdowns**,
 note width, roundness, default card style, **card glass blur**, **gradient ramp (4 stops + angle)**, body
 size, and animations.
 
