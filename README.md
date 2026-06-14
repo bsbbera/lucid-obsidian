@@ -41,6 +41,7 @@ Wrap any number of cards in `> [!grid]`; they flow into as many columns as fit a
 > > [!card] Three
 ```
 - Lock columns: `> [!grid|cols2]` … `cols6`.  · Span: `span2`, `span3`, `spanfull`.  · Grids nest.
+- **Distribute by ratio:** give cards `w1`…`w10` to split a row by weight — e.g. `> [!card|w3]` + `[!card|w7]` = **30 / 70** (like `[!col|wN]`; auto ratio mode, stacks on mobile).
 
 > **Nesting rule:** child cards use `>>` and must be separated by a blank `>` line.
 
@@ -49,8 +50,8 @@ Pick a card **style** with `> [!card|<style>]` (bare `[!card]` follows the *Defa
 | Style | Look |
 |---|---|
 | `skill` | label, big title, dark command bar, blue `01 02 03` steps |
-| `section` | flat column block — `###### I · LABEL` (use in `cols3`) |
-| `step` | ringed icon + `###### Step 0N` (use inside a `hero`) |
+| `section` | field card — frosted surface, accent top-stripe + kicker (great in `cols3`/`cols4`) |
+| `step` | ringed icon + `###### LABEL` + big number/title; pick the glyph with `icon-*` |
 | `profile` | centered avatar, label, name, link |
 | `honor` | dark — rank badge, ringed avatar, pull-quote, big stats |
 | `channels` | dark — table of `#channel \| LABEL` rows |
@@ -58,6 +59,9 @@ Pick a card **style** with `> [!card|<style>]` (bare `[!card]` follows the *Defa
 
 **Surfaces:** add `dark` or `accent`. **Buttons:** `**[Label](url)**` → filled, `[Label](url)` → outline.
 **Emphasis:** `*italic*` words render in the teal emphasis colour.
+**Step icons:** add an `icon-*` token to a `step` card — `icon-search · file · chat · list · book · cloud · database · layers` (e.g. `> [!card|step icon-cloud]`).
+
+> A `hero` card directly above a `[!grid]` of `step` cards automatically **fuses** with it into one seamless slab.
 
 Frosted glass (translucency + backdrop blur) is applied to light/default cards & infoboxes; dark
 honor/CTA surfaces stay solid for legibility.
