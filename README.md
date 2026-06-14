@@ -14,6 +14,9 @@ utilities so any run of text can be restyled inline — including an **Apple-sty
 
 ![screenshot](screenshot.png)
 
+> ▶ **Try the demo:** paste **[EXAMPLES.md](EXAMPLES.md)** into a note (reading view, Lucid selected)
+> to see every feature — cards, `wN` ratios, named step icons, infobox, multi-column, code blocks.
+
 ---
 
 ## Install

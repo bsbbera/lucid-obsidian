@@ -1854,6 +1854,10 @@ pre, .HyperMD-codeblock {
     border: 1px solid var(--mwg-border);
     border-radius: var(--radius-m);
 }
+/* code-emitter runnable blocks aren't decorated by code-styler, so they fall through
+   to the pre rule above (--mwg-pane-2) and look different from code-styler blocks
+   (which use --code-background = --mwg-code-bg). Match them. */
+.code-emitter-block { background: var(--mwg-code-bg) !important; }
 
 /* Body & UI run on the sans body font; only headings are serif (set in heading rules). */
 
