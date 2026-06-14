@@ -1854,10 +1854,25 @@ pre, .HyperMD-codeblock {
     border: 1px solid var(--mwg-border);
     border-radius: var(--radius-m);
 }
-/* code-emitter runnable blocks aren't decorated by code-styler, so they fall through
-   to the pre rule above (--mwg-pane-2) and look different from code-styler blocks
-   (which use --code-background = --mwg-code-bg). Match them. */
-.code-emitter-block { background: var(--mwg-code-bg) !important; }
+/* code-emitter wraps a runnable block in a <div.code-emitter-block> holding the
+   inner <pre>, a play button, an <hr> and the output. code-styler does NOT decorate
+   it, so without help the inner <pre> keeps the theme pre chrome (--mwg-pane-2) while
+   the wrapper/output show through differently, and an empty .code-output leaves a 2em
+   bar. Make the whole block ONE tinted surface (matching code-styler blocks), flatten
+   the inner <pre>, and hide the output until it actually has content. */
+.code-emitter-block {
+    background: var(--mwg-code-bg) !important;
+    border: 1px solid var(--mwg-border);
+    border-radius: var(--radius-m);
+    overflow: hidden;
+}
+.code-emitter-block pre {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0;
+}
+.code-emitter-block .code-output:empty { display: none !important; min-height: 0 !important; }
 
 /* Body & UI run on the sans body font; only headings are serif (set in heading rules). */
 
