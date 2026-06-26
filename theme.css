@@ -31,12 +31,12 @@
    ========================================================================== */
 /* @settings
 
-name: Lucid
+name: MyWiki Glass
 id: mywiki-glass
 settings:
     -
         id: mwg-info
-        title: Lucid
+        title: MyWiki Glass
         description: "Obsidian Glass palette (violet + teal). All colors, fonts and layout below drive the whole theme and its custom features."
         type: info-text
         markdown: false
@@ -63,8 +63,8 @@ settings:
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#3d82d0'
-        default-dark: '#5ad0c0'
+        default-light: '#1f9d93'
+        default-dark: '#4ecdc4'
     -
         id: mwg-gold
         title: Folder / highlight gold
@@ -72,23 +72,23 @@ settings:
         format: hex
         opacity: false
         default-light: '#b07d20'
-        default-dark: '#d9a441'
+        default-dark: '#f5b942'
     -
         id: mwg-danger
         title: Danger / close
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#c34a26'
-        default-dark: '#e0623f'
+        default-light: '#c0392b'
+        default-dark: '#e74c3c'
     -
         id: mwg-bg-0
         title: App background (deepest)
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#f7f8fb'
-        default-dark: '#0a0a0b'
+        default-light: '#eef2f7'
+        default-dark: '#000000'
     -
         id: mwg-editor
         title: Editor / note background
@@ -96,30 +96,30 @@ settings:
         format: hex
         opacity: false
         default-light: '#ffffff'
-        default-dark: '#0a0a0b'
+        default-dark: '#000000'
     -
         id: mwg-pane
         title: Sidebar background
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#f2f4f9'
-        default-dark: '#0e0e10'
+        default-light: '#e9eef5'
+        default-dark: '#060709'
     -
         id: mwg-pane-2
         title: Card / raised panel background
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#eaedf4'
-        default-dark: '#161618'
+        default-light: '#e1e7f1'
+        default-dark: '#0d1016'
     -
         id: mwg-text
         title: Body text
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#1a1a1a'
+        default-light: '#10203a'
         default-dark: '#ececec'
     -
         id: mwg-text-strong
@@ -127,7 +127,7 @@ settings:
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#14120e'
+        default-light: '#0b1830'
         default-dark: '#fbfbfa'
     -
         id: mwg-muted
@@ -135,7 +135,7 @@ settings:
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#5c5a55'
+        default-light: '#54607a'
         default-dark: '#a3a2a0'
     -
         id: mwg-faint
@@ -143,7 +143,7 @@ settings:
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#8a8780'
+        default-light: '#8590a3'
         default-dark: '#6e6d6b'
 
     -
@@ -541,7 +541,7 @@ settings:
         format: hex
         opacity: false
         default-light: '#0d7d72'
-        default-dark: '#4fd0bf'
+        default-dark: '#4ecdc4'
     -
         id: mwg-bold-italic-color
         title: Bold + italic color
@@ -549,7 +549,7 @@ settings:
         format: hex
         opacity: false
         default-light: '#0d7d72'
-        default-dark: '#4fd0bf'
+        default-dark: '#4ecdc4'
     -
         id: mwg-strikethrough-color
         title: Strikethrough color
@@ -580,8 +580,8 @@ settings:
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#3d82d0'
-        default-dark: '#5ad0c0'
+        default-light: '#1f9d93'
+        default-dark: '#4ecdc4'
     -
         id: mwg-callout-warning
         title: Warning / caution / attention
@@ -667,9 +667,9 @@ settings:
         title: Disable heading underline
         type: class-toggle
     -
-        id: mwg-bg-glow
-        title: Accent background glow (Glass wash)
-        description: Re-adds the soft violet glow behind the app. Off = flat near-black like the reference.
+        id: mwg-bg-flat
+        title: Flat background (no glow)
+        description: The soft top-center accent glow is on by default (reference look). Enable this for a flat, uniform AMOLED background.
         type: class-toggle
         addCommand: true
 
@@ -942,24 +942,24 @@ settings:
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#7b6cff'
-        default-dark: '#7b6cff'
+        default-light: '#4ecdc4'
+        default-dark: '#4ecdc4'
     -
         id: mwg-grad-3
         title: Gradient stop 3
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#ff6aa0'
-        default-dark: '#ff6aa0'
+        default-light: '#a855f7'
+        default-dark: '#a855f7'
     -
         id: mwg-grad-4
         title: Gradient stop 4
         type: variable-themed-color
         format: hex
         opacity: false
-        default-light: '#ff8a3d'
-        default-dark: '#ff8a3d'
+        default-light: '#3d8fe6'
+        default-dark: '#3d8fe6'
     -
         id: mwg-grad-angle
         title: Gradient angle
@@ -981,6 +981,7 @@ settings:
 /* ============================================================================
    [Fonts]
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap');
 
 
 /* ============================================================================
@@ -990,61 +991,72 @@ settings:
 body.theme-dark {
     /* Obsidian Pro: layered near-black + luminous oklch violet */
     --mwg-accent: #3d8fe6;
-    --mwg-accent-2: #5ad0c0;
+    --mwg-accent-2: #4ecdc4;
     --mwg-accent-rgb: 61, 143, 230;
-    --mwg-gold: #d9a441;
-    --mwg-danger: #e0623f;
+    --mwg-gold: #f5b942;
+    --mwg-green: #2ecc71;
+    --mwg-danger: #e74c3c;
 
-    --mwg-bg-0: #0a0a0b;
-    --mwg-bg-grad-a: #121214;
-    --mwg-bg-grad-b: #08080a;
-    --mwg-ribbon: #0a0a0b;
-    --mwg-pane: #0e0e10;
-    --mwg-pane-2: #161618;
-    --mwg-editor: #0a0a0b;
-    --mwg-raised: #1f1f22;
+    /* reference: pure AMOLED black + cool blue-tinted elevation (#070a0f) */
+    --mwg-bg-elev: #070a0f;
+    --mwg-surface-3: rgba(255, 255, 255, 0.10);
+    --mwg-bg-0: #000000;
+    --mwg-bg-grad-a: #0a0d12;
+    --mwg-bg-grad-b: #000000;
+    --mwg-ribbon: #000000;
+    --mwg-pane: #0a0a0a;
+    --mwg-pane-2: #121212;
+    --mwg-editor: #000000;
+    --mwg-raised: #181b22;
 
-    --mwg-text: #ececec;
-    --mwg-text-strong: #fbfbfa;
-    --mwg-muted: #a3a2a0;
-    --mwg-faint: #6e6d6b;
+    /* EXACT reference neutral white-alpha ramp (ref :root --text/--muted/--faint) */
+    --mwg-text: #ffffff;
+    --mwg-text-strong: #ffffff;
+    --mwg-muted: rgba(255, 255, 255, 0.62);
+    --mwg-faint: rgba(255, 255, 255, 0.40);
 
     --mwg-code-fg: #9ccbff;
     --mwg-th-bg: linear-gradient(180deg, #1c2f50, #16243f);
     --mwg-shadow-pop: 0 1px 2px rgba(0, 0, 0, 0.5), 0 24px 60px rgba(0, 0, 0, 0.7);
     /* subtle, neutral card elevation (no colored/white glow) */
     --mwg-shadow-card: 0 6px 22px rgba(0, 0, 0, 0.40);
-    --mwg-shadow-card-hover: 0 12px 34px rgba(0, 0, 0, 0.50);
+    /* AMOLED: a black drop-shadow is invisible on #000, so the lift reads via a
+       faint ACCENT GLOW (light, not dark) + the border/surface change on hover.
+       Keep a thin dark layer too for nested/elevated (non-black) contexts. */
+    --mwg-shadow-card-hover: 0 8px 26px -6px rgba(var(--mwg-accent-rgb), 0.30), 0 14px 36px rgba(0, 0, 0, 0.6);
+    --mwg-shadow-lift: 0 10px 30px -6px rgba(var(--mwg-accent-rgb), 0.40), 0 18px 44px -22px rgba(0, 0, 0, 0.85);
     --mwg-scrim: rgba(10, 10, 11, 0.66);
     /* graph: concrete hex/rgba ONLY — Obsidian's graph reader can't parse color-mix()/var-math */
     --mwg-graph: #ccc9e8;
     --mwg-graph-line: rgba(236, 236, 236, 0.16);
 
-    --mwg-h1: #fbfbfa;
-    --mwg-h2: #fbfbfa;
-    --mwg-h3: #ececec;
-    --mwg-h4: #d6d5d3;
-    --mwg-h5: #d6d5d3;
-    --mwg-h6: #a3a2a0;
-    --mwg-bold-color: #fbfbfa;
+    /* ref .ty headings: h1-h3 = text #fff, h4/h5 = muted, h6 = faint */
+    --mwg-h1: #ffffff;
+    --mwg-h2: #ffffff;
+    --mwg-h3: #ffffff;
+    --mwg-h4: rgba(255, 255, 255, 0.62);
+    --mwg-h5: rgba(255, 255, 255, 0.62);
+    --mwg-h6: rgba(255, 255, 255, 0.40);
+    --mwg-bold-color: #ffffff;
     /* italic emphasis = teal, deliberately DIFFERENT from the blue accent */
-    --mwg-em-color: #4fd0bf;
-    --mwg-italic-color: #4fd0bf;
-    --mwg-bold-italic-color: #4fd0bf;
+    --mwg-em-color: #4ecdc4;
+    --mwg-italic-color: #4ecdc4;
+    --mwg-bold-italic-color: #4ecdc4;
     --mwg-strikethrough-color: #a3a2a0;
 
-    /* ---- Anthropic-Touch parity: shared card/hero skin (dark mode) ---- */
-    --mwg-dark-surface: #1a1922;
-    --mwg-on-dark: #ececec;
-    --mwg-on-dark-muted: #b9b8c4;
-    --mwg-on-dark-border: rgba(255, 255, 255, 0.10);
-    /* accent hero — DARK = warm-dark panel, lifted cards, accent text */
-    --mwg-accent-surface: #121620;
-    --mwg-on-accent: #ececec;
-    --mwg-on-accent-em: var(--mwg-accent);
-    --mwg-on-accent-kick: var(--mwg-accent);
-    --mwg-accent-btn-bg: var(--mwg-accent);
-    --mwg-accent-btn-fg: #ffffff;
+    /* ---- `dark` keyword = INVERT the page mode. Page is DARK here, so `dark`
+       cards/casts become a LIGHT panel (opposite of the page). ---- */
+    --mwg-dark-surface: #f4f5f8;
+    --mwg-on-dark: #10203a;
+    --mwg-on-dark-muted: #51606f;
+    --mwg-on-dark-border: rgba(16, 32, 58, 0.14);
+    /* accent hero — DARK = FOIL gradient fill, white text (ref .cd-hero-accent) */
+    --mwg-accent-surface: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2));
+    --mwg-on-accent: #ffffff;
+    --mwg-on-accent-em: #ffffff;
+    --mwg-on-accent-kick: rgba(255, 255, 255, 0.82);
+    --mwg-accent-btn-bg: #ffffff;
+    --mwg-accent-btn-fg: var(--mwg-accent);
     --mwg-accent-nested: #20202a;
     --mwg-accent-nested-h: #fbfbfa;
     --mwg-accent-nested-p: #b9b8c4;
@@ -1054,25 +1066,32 @@ body.theme-dark {
 
 body.theme-light {
     /* Obsidian Pro: warm bone paper + pure-white surfaces + violet accent */
-    --mwg-accent: #2a5fd6;
-    --mwg-accent-2: #3d82d0;
-    --mwg-accent-rgb: 42, 95, 214;
+    /* EXACT reference blue — ref keeps --blue/--grad mode-independent (#3d8fe6).
+       Pixel-parity with the specimen chosen over AA deepening, by request. */
+    --mwg-accent: #3d8fe6;
+    --mwg-accent-2: #4ecdc4;
+    --mwg-accent-rgb: 61, 143, 230;
     --mwg-gold: #b07d20;
-    --mwg-danger: #c34a26;
+    --mwg-green: #1c9e54;
+    --mwg-danger: #c0392b;
 
-    --mwg-bg-0: #f7f8fb;
+    /* reference light: cool blue-grey paper + blue-ink text */
+    --mwg-bg-elev: #ffffff;
+    --mwg-surface-3: rgba(255, 255, 255, 0.95);
+    --mwg-bg-0: #eef2f7;
     --mwg-bg-grad-a: #ffffff;
-    --mwg-bg-grad-b: #eef0f6;
-    --mwg-ribbon: #eef0f6;
-    --mwg-pane: #f2f4f9;
-    --mwg-pane-2: #eaedf4;
+    --mwg-bg-grad-b: #e6ebf3;
+    --mwg-ribbon: #e6ebf3;
+    --mwg-pane: #f3f6f9;
+    --mwg-pane-2: #f7f9fb;
     --mwg-editor: #ffffff;
     --mwg-raised: #ffffff;
 
-    --mwg-text: #1a1a1a;
-    --mwg-text-strong: #14120e;
-    --mwg-muted: #5c5a55;
-    --mwg-faint: #8a8780;
+    /* EXACT reference light ramp (ref html.light --text/--muted/--faint) */
+    --mwg-text: #10203a;
+    --mwg-text-strong: #10203a;
+    --mwg-muted: rgba(16, 32, 58, 0.66);
+    --mwg-faint: rgba(16, 32, 58, 0.45);
 
     --mwg-code-fg: #1f5fd0;
     --mwg-th-bg: linear-gradient(180deg, #2a5fd6, #1f5fd0);
@@ -1080,35 +1099,39 @@ body.theme-light {
     /* subtle, neutral card elevation (no colored glow) */
     --mwg-shadow-card: 0 6px 22px rgba(20, 18, 14, 0.10);
     --mwg-shadow-card-hover: 0 12px 32px rgba(20, 18, 14, 0.14);
+    /* reference lift shadow — EXACT: html.light does NOT lighten it, same as dark */
+    --mwg-shadow-lift: 0 22px 48px -26px rgba(0, 0, 0, 0.7);
     --mwg-scrim: rgba(20, 18, 14, 0.5);
     --mwg-graph: #2a2733;
     --mwg-graph-line: rgba(20, 18, 14, 0.18);
 
-    --mwg-h1: #14120e;
-    --mwg-h2: #14120e;
-    --mwg-h3: #2a2733;
-    --mwg-h4: #3a3833;
-    --mwg-h5: #4a4843;
-    --mwg-h6: #5c5a55;
-    --mwg-bold-color: #14120e;
+    --mwg-h1: #10203a;
+    --mwg-h2: #10203a;
+    --mwg-h3: #10203a;
+    --mwg-h4: rgba(16, 32, 58, 0.66);
+    --mwg-h5: rgba(16, 32, 58, 0.66);
+    --mwg-h6: rgba(16, 32, 58, 0.45);
+    --mwg-bold-color: #10203a;
     /* italic emphasis = deep teal, deliberately DIFFERENT from the blue accent */
     --mwg-em-color: #0d7d72;
     --mwg-italic-color: #0d7d72;
     --mwg-bold-italic-color: #0d7d72;
     --mwg-strikethrough-color: #5c5a55;
 
-    /* ---- Anthropic-Touch parity: shared card/hero skin (light mode) ---- */
-    --mwg-dark-surface: #1c1b24;
+    /* ---- `dark` keyword = INVERT the page mode. Page is LIGHT here, so `dark`
+       cards/casts become a DARK panel (opposite of the page). The blue blueprint
+       grid (#3d8fe6, hardcoded at the rule) reads on this near-black panel. ---- */
+    --mwg-dark-surface: #0c1118;
     --mwg-on-dark: #ececec;
     --mwg-on-dark-muted: #b9b8c4;
-    --mwg-on-dark-border: rgba(255, 255, 255, 0.10);
-    /* accent hero — LIGHT = violet panel + dark nested cards (reference look) */
-    --mwg-accent-surface: #2a5fd6;
+    --mwg-on-dark-border: rgba(255, 255, 255, 0.12);
+    /* accent hero — LIGHT = FOIL gradient fill, white text (ref .cd-hero-accent) */
+    --mwg-accent-surface: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2));
     --mwg-on-accent: #ffffff;
-    --mwg-on-accent-em: #ece7ff;
-    --mwg-on-accent-kick: #ece7ff;
-    --mwg-accent-btn-bg: #14120e;
-    --mwg-accent-btn-fg: #ffffff;
+    --mwg-on-accent-em: #ffffff;
+    --mwg-on-accent-kick: rgba(255, 255, 255, 0.85);
+    --mwg-accent-btn-bg: #ffffff;
+    --mwg-accent-btn-fg: var(--mwg-accent);
     --mwg-accent-nested: #1b1a22;
     --mwg-accent-nested-h: #ffffff;
     --mwg-accent-nested-p: #c7c5d2;
@@ -1121,10 +1144,14 @@ body {
     /* derived from accent so a single picker recolors everything */
     --mwg-accent-soft: color-mix(in srgb, var(--mwg-accent) 14%, transparent);
     --mwg-accent-line: color-mix(in srgb, var(--mwg-accent) 55%, transparent);
-    --mwg-code-bg: color-mix(in srgb, var(--mwg-accent) 12%, transparent);
+    --mwg-code-bg: color-mix(in srgb, var(--mwg-accent) 12%, var(--mwg-editor));  /* OPAQUE
+        (12% accent over the editor bg) — like Anthropic Touch's --at-code-surface. A
+        translucent code surface blends with whatever is behind it, so code-styler blocks
+        and plain code-emitter blocks resolved to different shades; opaque looks identical
+        everywhere regardless of wrapper/backdrop. */
     --mwg-chip-bg: color-mix(in srgb, var(--mwg-accent) 13%, transparent);
     --mwg-border: color-mix(in srgb, var(--mwg-text-strong) 8%, transparent);
-    --mwg-border-2: color-mix(in srgb, var(--mwg-text-strong) 14%, transparent);
+    --mwg-border-2: color-mix(in srgb, var(--mwg-text-strong) 16%, transparent);
     --mwg-border-strong: color-mix(in srgb, var(--mwg-text-strong) 22%, transparent);
 
     /* category-tag tint hues (Obsidian Pro) — text auto-adapts per theme */
@@ -1136,7 +1163,7 @@ body {
     /* heading-underline width + per-callout accent fallbacks (Style Settings overrides each) */
     --mwg-head-underline-width: 1px;
     --mwg-callout-note: var(--mwg-accent);
-    --mwg-callout-tip: var(--mwg-accent-2);
+    --mwg-callout-tip: var(--mwg-green);
     --mwg-callout-warning: var(--mwg-gold);
     --mwg-callout-question: var(--mwg-gold);
     --mwg-callout-danger: var(--mwg-danger);
@@ -1149,6 +1176,14 @@ body {
     --mwg-font-heading: 'Segoe UI Variable Display', 'Segoe UI', system-ui, -apple-system, sans-serif;
     --mwg-font-serif: 'Segoe UI', system-ui, -apple-system, sans-serif;
     --mwg-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    /* "handwriting" for marginalia casts — glass has no script face, so italic body */
+    --mwg-font-hand: var(--mwg-font-body);
+    /* DA-cast aliases: parchment casts (fieldnote/specimen/infobox-tag) become glass
+       cards; glass has no paper grain so the noise texture is neutralised. */
+    --mwg-paper: var(--mwg-pane-2);
+    --mwg-paper-ink: var(--mwg-text);
+    --mwg-paper-ink-soft: var(--mwg-muted);
+    --paper-noise: none;
 
     /* heading-color aliases used by the editor section + Style Settings */
     --h1-color: var(--mwg-h1);
@@ -1163,11 +1198,11 @@ body {
     --strikethrough-color: var(--mwg-strikethrough-color);
 
     /* shape */
-    --mwg-radius: 8px;
+    --mwg-radius: 9px;
     --mwg-scrollbar: 6px;
     --radius-s: var(--mwg-radius);
-    --radius-m: calc(var(--mwg-radius) + 4px);
-    --radius-l: calc(var(--mwg-radius) + 6px);
+    --radius-m: calc(var(--mwg-radius) + 3px);
+    --radius-l: calc(var(--mwg-radius) + 5px);
 
     /* editorial + spacing knobs (overridable via Style Settings) */
     --mwg-para-spacing: 11px;
@@ -1190,13 +1225,13 @@ body {
     --mwg-col-min: 200px;
 
     /* frosted-card backdrop blur strength (Style Settings slider) */
-    --mwg-card-blur: 24px;
+    --mwg-card-blur: 16px;
 
     /* .at-gradient text ramp — each stop + angle is a Style Settings control */
     --mwg-grad-1: #3d8fe6;
-    --mwg-grad-2: #7b6cff;
-    --mwg-grad-3: #ff6aa0;
-    --mwg-grad-4: #ff8a3d;
+    --mwg-grad-2: #4ecdc4;
+    --mwg-grad-3: #a855f7;
+    --mwg-grad-4: #3d8fe6;
     --mwg-grad-angle: 100deg;
     --mwg-grad: linear-gradient(var(--mwg-grad-angle), var(--mwg-grad-1), var(--mwg-grad-2) 34%, var(--mwg-grad-3) 66%, var(--mwg-grad-4));
 
@@ -1228,7 +1263,10 @@ body {
     --interactive-accent: var(--mwg-accent);
     --interactive-accent-hover: color-mix(in srgb, var(--mwg-accent) 82%, white);
 
-    --code-background: var(--mwg-code-bg);
+    --code-background: color-mix(in srgb, var(--mwg-accent) 20%, var(--mwg-pane-2));  /* block
+        code surface: opaque, medium-strength accent (richer than inline code's 12% so it
+        reads as accented like the blockquote). Opaque ⇒ every block matches regardless of
+        wrapper/stacking. Inline code keeps the subtler --mwg-code-bg. */
     --code-normal: var(--mwg-code-fg);
 
     --titlebar-background: var(--mwg-ribbon);
@@ -1290,8 +1328,8 @@ body {
     --h4-size: 1.1em;
     --h5-size: 1em;
     --h6-size: 0.9em;
-    --h1-weight: var(--mwg-heading-weight);
-    --h2-weight: var(--mwg-heading-weight);
+    --h1-weight: 700;
+    --h2-weight: 600;
     --h3-weight: calc(var(--mwg-heading-weight) + 100);
     --h4-weight: calc(var(--mwg-heading-weight) + 100);
     --h5-weight: calc(var(--mwg-heading-weight) + 100);
@@ -1321,15 +1359,10 @@ body {
     background-color: var(--mwg-bg-0);
 }
 
-/* Obsidian Pro: flat, uniform near-black — no accent wash, no diagonal gradient */
+/* flat base; the reference top-center glow is painted on the reading field
+   itself (below) so intermediate opaque panes can't hide it */
 .workspace {
     background: var(--mwg-bg-0);
-}
-/* opt-in "Glass wash" — re-adds the soft accent glow behind the whole app */
-body.mwg-bg-glow .workspace {
-    background:
-        radial-gradient(120% 80% at 78% -10%, var(--mwg-accent-soft), transparent 55%),
-        var(--mwg-bg-0);
 }
 
 ::selection {
@@ -1589,9 +1622,31 @@ body.mwg-bg-glow .workspace {
    [Editor]  headings, lists, code, tables, links, tags, properties
    ========================================================================== */
 
+/* reading/editing field is transparent so the workspace grey + top glow shows
+   through — matches reference, where content sits on the tinted page (not an
+   opaque white sheet). Card/callout casts paint their own surfaces on top. */
+.mod-root .workspace-leaf-content,
+.mod-root .view-content {
+    background: transparent;
+}
+/* glow lives here, fixed to the viewport — same as reference body::before.
+   Painted on the reading field so it shows behind transparent paragraph blocks
+   and can't be covered by any opaque pane above the workspace. */
 .markdown-preview-view,
 .markdown-source-view {
-    background: var(--mwg-editor);
+    background-color: transparent;
+    background-image: radial-gradient(120% 80% at 50% -10%,
+        color-mix(in srgb, var(--mwg-accent) 16%, transparent), transparent 60%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+body.theme-dark :is(.markdown-preview-view, .markdown-source-view) {
+    background-image: radial-gradient(120% 80% at 50% -10%,
+        color-mix(in srgb, var(--mwg-accent) 18%, transparent), transparent 60%);
+}
+/* opt-out: flat, uniform background */
+body.mwg-bg-flat :is(.markdown-preview-view, .markdown-source-view) {
+    background-image: none;
 }
 
 /* ----- Inline title + headings (serif) ----- */
@@ -1625,9 +1680,11 @@ body.mwg-bg-glow .workspace {
 .markdown-reading-view h2,
 .HyperMD-header-1,
 .HyperMD-header-2 {
-    padding-bottom: 7px;
-    border-bottom: var(--mwg-head-underline-width) solid transparent;
-    border-image: linear-gradient(90deg, var(--mwg-accent), var(--mwg-accent-2)) 1;
+    /* reference .h-rule / .ty: clean neutral hairline under section heads — NO gradient line.
+       The blue→teal gradient lives in link text + cast rules per the reference, not headings. */
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--mwg-border-2);
+    border-image: none;
 }
 /* "Disable heading underline" toggle removes the gradient rule */
 body.mwg-no-head-underline :is(.markdown-preview-view h1, .markdown-preview-view h2,
@@ -1643,6 +1700,11 @@ body.mwg-no-head-underline :is(.markdown-preview-view h1, .markdown-preview-view
 .cm-header-4, .markdown-preview-view h4, .markdown-reading-view h4 { color: var(--h4-color); }
 .cm-header-5, .markdown-preview-view h5, .markdown-reading-view h5 { color: var(--h5-color); }
 .cm-header-6, .markdown-preview-view h6, .markdown-reading-view h6 { color: var(--h6-color); }
+
+/* display-H1 moment: balanced wrap + teal-italic emphasis run (reference .at-display em).
+   Global, no new syntax — write `# The Antikythera *mechanism*` and the em goes teal-italic. */
+.markdown-preview-view h1, .markdown-reading-view h1, .inline-title { text-wrap: balance; }
+.markdown-preview-view :is(h1, h2, h3) :is(em, i), .markdown-reading-view :is(h1, h2, h3) :is(em, i), .inline-title :is(em, i) { font-style: italic; color: var(--mwg-accent-2); }
 
 /* ----- Heading hover affordances (reading view) -----
    A '#' anchor glyph slides in from the left gutter, and h3–h6 (which have no
@@ -1775,6 +1837,11 @@ body.mwg-halign-right .markdown-source-view .HyperMD-header { margin-left: auto;
     color: var(--bold-color);
     font-weight: var(--bold-weight);
 }
+/* dark-surface cards (hero / profile dark) carry light body text; the navy
+   --bold-color is invisible there, so bold must follow the card's own color. */
+.callout[data-callout="card"]:is([data-callout-metadata~="hero"], [data-callout-metadata~="dark"]) :is(strong, b) {
+    color: inherit;
+}
 .cm-em, .markdown-rendered em, .markdown-preview-view em { color: var(--italic-color); font-style: italic; }
 .cm-strong.cm-em,
 .markdown-rendered strong em, .markdown-rendered em strong,
@@ -1798,21 +1865,41 @@ a.external-link, .cm-link {
 }
 .internal-link.is-unresolved { color: var(--mwg-danger); opacity: 0.85; }
 
-/* Obsidian Pro signature: reading-view links underline-wipe left→right on hover */
+/* reading-view links: ONE underline only — a blue→teal gradient that FLOWS on hover.
+   (DA double-underline fix: the base border-bottom rule also fired on hover, giving two
+   lines; we kill border-bottom here so the gradient underline is the single source.) */
+/* ONE underline (border-bottom). The TEXT carries the flowing blue→teal gradient on
+   hover — reference .at-gradient (background-clip:text + animated background-position). */
 .markdown-rendered a.internal-link,
 .markdown-rendered a.external-link {
-    border-bottom: none;
     font-weight: 500;
-    background-image: linear-gradient(var(--mwg-accent-2), var(--mwg-accent-2));
-    background-size: 0% 1.5px;
+    color: var(--mwg-accent);
+    -webkit-text-fill-color: var(--mwg-accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--mwg-accent-line) !important;
+    background-image: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2), var(--mwg-accent));
+    background-size: 200% auto;
     background-repeat: no-repeat;
-    background-position: 0% 100%;
-    padding-bottom: 1.5px;
-    transition: background-size var(--mwg-dur) var(--mwg-ease), color var(--mwg-dur-fast) var(--mwg-ease);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: border-color var(--mwg-dur-fast) var(--mwg-ease);
 }
 .markdown-rendered a.internal-link:hover,
 .markdown-rendered a.external-link:hover {
-    background-size: 100% 1.5px;
+    -webkit-text-fill-color: transparent;
+    border-bottom-color: var(--mwg-accent-2) !important;
+    animation: mwg-link-flow 3s linear infinite;
+}
+@keyframes mwg-link-flow { to { background-position: 200% center; } }
+@media (prefers-reduced-motion: reduce) {
+    .markdown-rendered a.internal-link:hover, .markdown-rendered a.external-link:hover { animation: none; -webkit-text-fill-color: var(--mwg-accent-2); }
+}
+
+/* lead paragraph: the note's opening paragraph reads as an italic editorial lead
+   (reference .at-lead). Scoped to the first top-level paragraph only — never touches
+   callout/cast bodies (those aren't direct .el-p children of the sizer). No new syntax. */
+.markdown-preview-view .markdown-preview-sizer > .el-p:first-of-type > p {
+    font-size: 1.06em; font-style: italic; line-height: 1.62; color: var(--mwg-muted);
 }
 
 /* ----- Focus-visible rings (keyboard accessibility) -----
@@ -1850,29 +1937,22 @@ a.external-link, .cm-link {
     font-size: 0.88em;
 }
 pre, .HyperMD-codeblock {
-    background: var(--mwg-pane-2) !important;
+    background: var(--code-background) !important;   /* same surface code-styler uses, so
+        every code block matches — incl. code-emitter runnable blocks that code-styler
+        doesn't decorate (they previously fell through to the gray --mwg-pane-2). */
     border: 1px solid var(--mwg-border);
     border-radius: var(--radius-m);
 }
-/* code-emitter wraps a runnable block in a <div.code-emitter-block> holding the
-   inner <pre>, a play button, an <hr> and the output. code-styler does NOT decorate
-   it, so without help the inner <pre> keeps the theme pre chrome (--mwg-pane-2) while
-   the wrapper/output show through differently, and an empty .code-output leaves a 2em
-   bar. Make the whole block ONE tinted surface (matching code-styler blocks), flatten
-   the inner <pre>, and hide the output until it actually has content. */
-.code-emitter-block {
-    background: var(--mwg-code-bg) !important;
-    border: 1px solid var(--mwg-border);
-    border-radius: var(--radius-m);
-    overflow: hidden;
-}
-.code-emitter-block pre {
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
-    margin: 0;
-}
-.code-emitter-block .code-output:empty { display: none !important; min-height: 0 !important; }
+/* code-emitter sits INSIDE the code block's <pre> (run button, separator, output).
+   The <pre> already carries the one shared --code-background surface (pre rule above),
+   so .code-emitter-block must add NO surface of its own — otherwise its translucent
+   tint stacks on the pre's in the output region and renders darker than the code.
+   Keep the wrapper and all its children transparent; collapse empty output. */
+.code-emitter-block,
+.code-emitter-block * { background: transparent !important; }
+.code-emitter-block { border: none !important; box-shadow: none !important; }
+.code-emitter-block .code-output { min-height: 0 !important; }
+.code-emitter-block .code-output:empty { display: none !important; }
 
 /* Body & UI run on the sans body font; only headings are serif (set in heading rules). */
 
@@ -1931,27 +2011,31 @@ a.tag[href="#python" i], a.tag[href="#computer_science" i] {
     border-radius: var(--radius-m);
     overflow: hidden;
 }
+/* ref .tbl th: transparent, blue mono small-caps (NOT a filled gradient bar) */
 :is(.markdown-rendered, .cm-table-widget) th {
-    background: var(--mwg-th-bg);
-    color: #fff;
-    font-weight: 600;
+    background: transparent;
+    color: var(--mwg-accent);
+    font-family: var(--mwg-font-mono);
+    font-weight: 400;
+    font-size: 9.5px;
+    text-transform: uppercase;
     text-align: left;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.1em;
     border: none;
 }
-/* links in the (dark gradient) header must stay readable */
+/* header links follow the blue mono header */
 :is(.markdown-rendered, .cm-table-widget) th a,
 :is(.markdown-rendered, .cm-table-widget) th a.internal-link,
 :is(.markdown-rendered, .cm-table-widget) th a.external-link,
 :is(.markdown-rendered, .cm-table-widget) th a.internal-link.is-unresolved {
-    color: #fff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: var(--mwg-accent);
+    border-bottom: none;
     opacity: 1;
 }
-:is(.markdown-rendered, .cm-table-widget) th a:hover { color: #fff; border-bottom-color: #fff; }
+:is(.markdown-rendered, .cm-table-widget) th a:hover { color: var(--mwg-accent-2); }
 :is(.markdown-rendered, .cm-table-widget) td { border: none; border-top: 1px solid var(--mwg-border); }
-:is(.markdown-rendered, .cm-table-widget) tbody tr { transition: background 140ms; }
-:is(.markdown-rendered, .cm-table-widget) tbody tr:hover { background: var(--mwg-accent-soft); }
+/* ref .tbl-ledger tr:hover: instant blue 9% (no transition) */
+:is(.markdown-rendered, .cm-table-widget) tbody tr:hover { background: color-mix(in srgb, var(--mwg-accent) 9%, transparent); }
 :is(.markdown-rendered, .cm-table-widget) tbody td:first-child { font-weight: 600; color: var(--mwg-text-strong); }
 
 /* ----- Properties / metadata block (compact · borderless · editorial) ----- */
@@ -2253,16 +2337,31 @@ body.mwg-quote-mark .callout[data-callout="cite"]:not([data-callout-metadata*="p
     border-radius: var(--radius-m);
     border: 1px solid var(--mwg-border-2);
     border-left: 3px solid var(--cc);
-    background: color-mix(in srgb, var(--cc) 8%, var(--mwg-pane-2));
+    /* reference .co: flat surface, accent only on the left rail + title (not a body tint) */
+    background: var(--mwg-pane-2);
     mix-blend-mode: normal;
-    transition: transform 200ms var(--mwg-ease), box-shadow 200ms, border-color 200ms;
+    /* reference .variant transition: 0.5s expo on transform + box-shadow */
+    transition: transform .5s cubic-bezier(.16, 1, .3, 1), box-shadow .5s cubic-bezier(.16, 1, .3, 1), border-color 200ms;
 }
-.callout:hover {
-    box-shadow: var(--mwg-shadow-pop);
-    border-color: var(--mwg-border-strong);
+/* lift ONLY content callouts. CONTAINER callouts ([!grid]/[!columns]/[!col]/[!tags]/
+   [!hr]/[!fig]/[!infobox]/[!multi-column]/...) must NEVER lift — they wrap other
+   callouts, so hover bubbles up from a child and would drag the whole group. Cards,
+   quotes and casts have their own hover rules. */
+.callout:not([data-callout="grid"]):not([data-callout="grid-wrapper"]):not([data-callout="columns"]):not([data-callout="col"]):not([data-callout="tags"]):not([data-callout="hr"]):not([data-callout="fig"]):not([data-callout="infobox"]):not([data-callout="multi-column"]):not([data-callout="mcol"]):not([data-callout="quote"]):not([data-callout="table"]):not([data-callout="code"]):not([data-callout*="blank"]):hover {
+    /* reference .variant/.co hover: lift -4px. On AMOLED the depth reads via a
+       brightened border + the accent glow (not a black shadow). */
+    transform: translateY(-4px);
+    box-shadow: var(--mwg-shadow-lift);
+    border-color: color-mix(in srgb, var(--mwg-accent) 45%, var(--mwg-border-strong));
 }
 .callout-title { padding: 8px 12px; }
 .callout-icon .svg-icon { color: var(--cc); }
+/* base admonition title = reference .co .ti (mono small-caps, type-colored). Scoped
+   to PLAIN native callouts; any |cast keeps its own title (seal/folio/marg/etc). */
+.callout:is([data-callout="note"],[data-callout="abstract"],[data-callout="summary"],[data-callout="info"],[data-callout="tip"],[data-callout="hint"],[data-callout="important"],[data-callout="success"],[data-callout="check"],[data-callout="done"],[data-callout="question"],[data-callout="help"],[data-callout="faq"],[data-callout="warning"],[data-callout="caution"],[data-callout="attention"],[data-callout="failure"],[data-callout="fail"],[data-callout="missing"],[data-callout="danger"],[data-callout="error"],[data-callout="bug"],[data-callout="example"]):not([data-callout-metadata]) > .callout-title .callout-title-inner {
+    font-family: var(--mwg-font-mono); text-transform: uppercase; letter-spacing: .1em;
+    font-size: 10.5px; font-weight: 600; color: var(--cc);
+}
 
 /* per-type accent — each is its own Style Settings color picker */
 .callout[data-callout="note"],
@@ -2337,26 +2436,34 @@ body { --mwg-infobox-width: 300px; }
 .markdown-reading-view .markdown-preview-sizer > :is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6, .el-hr) {
     display: flow-root;
 }
-/* hide the auto "Infobox" title — the card starts with the note's own heading */
-.callout[data-callout="infobox"] > .callout-title { display: none; }
-.callout[data-callout="infobox"] > .callout-content { padding-top: 16px; }
-/* first heading inside the infobox becomes the centered serif title */
+/* ref .ib-float: the callout title becomes a gradient TAG PILL (left-aligned) */
+.callout[data-callout="infobox"] > .callout-title { display: block; padding: 14px 14px 0; background: transparent !important; }
+.callout[data-callout="infobox"] > .callout-title .callout-icon { display: none; }
+.callout[data-callout="infobox"] > .callout-title .callout-title-inner {
+    display: inline-block; font-family: var(--mwg-font-mono); font-size: 9px; letter-spacing: .14em;
+    text-transform: uppercase; color: #fff; font-weight: 500;
+    background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2));
+    padding: 3px 10px; border-radius: 20px;
+}
+.callout[data-callout="infobox"] > .callout-content { padding-top: 6px; }
+/* first heading = serif title, left-aligned (ref .ib-float .t) */
 .callout[data-callout="infobox"] :is(h1, h2):first-child {
-    text-align: center;
+    text-align: left;
     font-family: var(--mwg-font-heading);
-    font-size: 1.5em;
-    margin: 0 0 2px;
-    padding: 0;
+    font-size: 1.35em;
+    font-weight: 600;
+    margin: 0;
+    padding: 8px 16px 0;
     border-bottom: none;
     color: var(--mwg-text-strong);
 }
-/* subtitle = first paragraph right under the title (italic, centered, muted) */
+/* subtitle = first paragraph under the title (italic, muted, left) */
 .callout[data-callout="infobox"] :is(h1, h2):first-child + p {
-    text-align: center;
+    text-align: left;
     font-style: italic;
     color: var(--mwg-muted);
-    margin: 0 0 12px;
-    padding-bottom: 12px;
+    margin: 0;
+    padding: 2px 16px 12px;
     border-bottom: 1px solid var(--mwg-border);
 }
 /* Obsidian wraps reading-view tables in a .table-wrapper that scrolls on
@@ -3345,8 +3452,8 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
 .callout[data-callout="card"] .callout-icon { display: none; }
 .callout[data-callout="card"] .callout-title-inner {
     font-family: var(--mwg-font-heading);
-    font-weight: 500;
-    font-size: 1.7em;
+    font-weight: 600;
+    font-size: 21px; /* ref .cd-skill/.cd .t = 21px (was 1.7em ~27px) */
     line-height: 1.12;
     letter-spacing: -0.012em;
     color: var(--mwg-text-strong);
@@ -3369,10 +3476,9 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
     border: none;
     padding: 0;
 }
+/* reference card kickers (.cd-glass/.cd-skill/.cd-honor/.cd-hero .k) carry NO dot */
 .callout[data-callout="card"] .callout-content > h6:first-child::before {
-    content: "● ";
-    font-size: 0.8em;
-    vertical-align: 0.1em;
+    content: none;
 }
 
 /* ----- SURFACES (direct-child scoped so they NEVER bleed into nested cards) ----- */
@@ -3385,6 +3491,29 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
 .callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-content { color: var(--mwg-on-dark-muted); }
 .callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-content > :is(h1, h2, h3, h4) { color: var(--mwg-on-dark); }
 .callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-content > hr { border-top-color: var(--mwg-on-dark-border); }
+/* CONTRAST: kicker/label (h6, .role) on a DARK card must use a LIGHT muted colour —
+   the per-variant `--mwg-faint` is tuned for the page bg, so on a dark card in light
+   mode it goes near-invisible (the bug: "FROM THE STUDIO" unreadable on Koki/Victor). */
+.callout[data-callout="card"][data-callout-metadata*="dark"] .callout-content h6,
+.callout[data-callout="card"][data-callout-metadata*="dark"] .callout-content .role {
+    color: var(--mwg-on-dark-muted) !important;
+}
+/* BLUEPRINT grid on the hero-dark banner only (ref .cd-hero-dark).
+   `grid` = blueprint OVERLAY (lines + corner glow) only. The panel surface and
+   text come from the normal / `dark` invert logic, so grid honors the light/dark
+   switch like every other cast: `hero grid` = grid on page-mode panel, `hero grid
+   dark` = grid on the inverted panel. Painted as `background-image` longhand so the
+   panel's own background-COLOR survives; doubled `~="grid"` gives (0,5,0) so the
+   lines beat the generic invert rule's `background:` shorthand. Blue 28% reads on
+   both the near-white and the near-black panel; the glow fades to transparent so it
+   tints whichever surface is behind it. */
+.callout[data-callout="card"][data-callout-metadata~="hero"][data-callout-metadata~="grid"][data-callout-metadata~="grid"] {
+    background-image:
+        linear-gradient(color-mix(in srgb, #3d8fe6 20%, transparent) 1px, transparent 1px),
+        linear-gradient(90deg, color-mix(in srgb, #3d8fe6 20%, transparent) 1px, transparent 1px),
+        radial-gradient(130% 130% at 12% 0, color-mix(in srgb, #3d8fe6 16%, transparent), transparent) !important;
+    background-size: 26px 26px, 26px 26px, 100% 100% !important;
+}
 /* NESTED cards inside a dark surface that don't set their OWN surface still need
    light text — Obsidian/other themes set `color` directly on every .callout, which
    breaks inheritance and makes them render black-on-black (the four-step step cards
@@ -3399,17 +3528,40 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
     color: var(--mwg-on-dark-muted);
 }
 
+/* ---- GENERIC `dark` = invert page mode on ANY callout / cast (not just cards).
+   Surface + body text flip to the opposite-mode palette; the cast keeps its own
+   accent title (mid-tone accents read on both the dark and the light panel).
+   The doubled `~="dark"` attr lifts specificity to (0,4,0) so it beats per-cast
+   `background:!important` rules regardless of source order. ---- */
+.callout[data-callout][data-callout-metadata~="dark"][data-callout-metadata~="dark"] {
+    background: var(--mwg-dark-surface) !important;
+    border-color: var(--mwg-on-dark-border) !important;
+    color: var(--mwg-on-dark-muted) !important;
+}
+.callout[data-callout][data-callout-metadata~="dark"][data-callout-metadata~="dark"] > .callout-content {
+    color: var(--mwg-on-dark-muted) !important;
+}
+.callout[data-callout][data-callout-metadata~="dark"][data-callout-metadata~="dark"] > .callout-content :is(h1, h2, h3, h4, strong, b) {
+    color: var(--mwg-on-dark) !important;
+}
+.callout[data-callout][data-callout-metadata~="dark"][data-callout-metadata~="dark"] > .callout-content hr {
+    border-top-color: var(--mwg-on-dark-border) !important;
+}
+
 /* ACCENT hero. LIGHT = coral panel (reference); DARK = warm-dark panel (the black
    version). All colours come from mode-aware tokens so each mode is correct. */
 .callout[data-callout="card"][data-callout-metadata*="accent"] {
     background: var(--mwg-accent-surface);
     border-color: transparent;
     color: var(--mwg-on-accent);
+    box-shadow: 0 24px 60px -30px color-mix(in srgb, var(--mwg-accent) 90%, transparent);
 }
 .callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-title .callout-title-inner,
 .callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > :is(h1, h2, h3, h4) { color: var(--mwg-on-accent); }
 .callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-title .callout-title-inner em,
-.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > :is(h1, h2, h3) em { color: var(--mwg-on-accent-em); }
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > :is(h1, h2, h3) em {
+    color: var(--mwg-on-accent-em); text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.5);
+}
 .callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content { color: color-mix(in srgb, var(--mwg-on-accent) 84%, var(--mwg-accent)); }
 .callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > h6:first-child,
 .callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > h6:first-child::before { color: var(--mwg-on-accent-kick); }
@@ -3496,19 +3648,27 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
     body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol > li {
     counter-increment: step;
     position: relative;
-    padding-left: 3.2em;
-    margin: 1em 0;
+    padding-left: 34px;
+    margin: 0.6em 0;
 }
+/* ref .cd-skill ol li::before = a 24x24 r7 blue-tint CHIP with centered number */
 :is(.callout[data-callout="card"][data-callout-metadata*="skill"],
     body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol > li::before {
     content: counter(step, decimal-leading-zero);
     position: absolute;
     left: 0;
-    top: 0.05em;
-    font-family: var(--mwg-font-mono);
-    font-size: 0.95em;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    background: color-mix(in srgb, var(--mwg-accent) 16%, transparent);
     color: var(--mwg-accent);
-    opacity: 0.55;
+    display: grid;
+    place-items: center;
+    font-family: var(--mwg-font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 1;
 }
 :is(.callout[data-callout="card"][data-callout-metadata*="skill"],
     body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol > li strong {
@@ -3677,6 +3837,31 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
 .callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) :is(h6, em) { color: var(--mwg-accent) !important; }
 .callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) p:not(:has(strong)) { color: var(--mwg-on-dark-muted) !important; }
 
+/* ===== STANDALONE step grid (NO hero) = reference cd-step: separate LIGHT frosted
+   tiles with a blue-tint rounded-square icon box + big tabular number. The four-step
+   CTA slab above (which DOES contain a hero) keeps its dark fused look untouched. == */
+.cm-s-obsidian .callout[data-callout="grid"]:has(.callout[data-callout-metadata~="step"]):not(:has(.callout[data-callout-metadata*="hero"])) > .callout-content { gap: 20px !important; }
+.cm-s-obsidian .callout[data-callout="grid"]:has(.callout[data-callout-metadata~="step"]):not(:has(.callout[data-callout-metadata*="hero"])) > .callout-content > .callout[data-callout-metadata~="step"] {
+    background: var(--mwg-pane-2) !important;
+    border: 1px solid var(--mwg-border-2) !important;
+    border-radius: var(--radius-l) !important;
+    color: var(--mwg-text) !important;
+    margin: 0 !important;
+    transition: transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1), border-color 200ms;
+}
+.cm-s-obsidian .callout[data-callout="grid"]:has(.callout[data-callout-metadata~="step"]):not(:has(.callout[data-callout-metadata*="hero"])) > .callout-content > .callout[data-callout-metadata~="step"]:hover {
+    transform: translateY(-4px); box-shadow: var(--mwg-shadow-lift); border-color: color-mix(in srgb, var(--mwg-accent) 45%, var(--mwg-border-strong)) !important;
+}
+/* light icon box: blue-tint rounded square (ref .cd-step .ic) */
+.cm-s-obsidian .callout[data-callout="grid"]:has(.callout[data-callout-metadata~="step"]):not(:has(.callout[data-callout-metadata*="hero"])) > .callout-content > .callout[data-callout-metadata~="step"] > .callout-content::before {
+    width: 38px !important; height: 38px !important; border-radius: 9px !important; border: 0 !important;
+    background-color: color-mix(in srgb, var(--mwg-accent) 16%, transparent) !important;
+}
+/* big tabular number + faint kicker + muted body (ref .cd-step .n/.k/.l) */
+.cm-s-obsidian .callout[data-callout="grid"]:has(.callout[data-callout-metadata~="step"]):not(:has(.callout[data-callout-metadata*="hero"])) :is(h2, h3) { color: var(--mwg-text-strong) !important; font-weight: 700 !important; font-variant-numeric: tabular-nums; }
+.cm-s-obsidian .callout[data-callout="grid"]:has(.callout[data-callout-metadata~="step"]):not(:has(.callout[data-callout-metadata*="hero"])) h6 { color: var(--mwg-faint) !important; }
+.cm-s-obsidian .callout[data-callout="grid"]:has(.callout[data-callout-metadata~="step"]):not(:has(.callout[data-callout-metadata*="hero"])) p { color: var(--mwg-muted) !important; }
+
 /* ===== FUSE a standalone hero card with an immediately-following step grid ========
    Reader writes the hero + stat band as two separate top-level blocks; reading view
    wraps each in `.el-div`, so bridge with :has()/+ : hero flattens its bottom edge +
@@ -3744,7 +3929,7 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
     text-transform: uppercase;
     letter-spacing: 0.16em;
     font-size: 0.7em;
-    color: var(--mwg-accent);
+    color: var(--mwg-faint); /* ref .cd-profile .role = faint, not accent */
     border: none;
     margin: 0 0 6px;
     padding: 0;
@@ -3752,7 +3937,7 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
 :is(.callout[data-callout="card"][data-callout-metadata*="profile"],
     body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) :is(h2, h3) {
     font-family: var(--mwg-font-heading);
-    font-weight: 500;
+    font-weight: 600; /* ref .cd-profile .nm = 600 */
     font-size: 1.5em;
     margin: 0 0 10px;
 }
@@ -3764,21 +3949,28 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
 }
 
 /* ----- STYLE: honor — dark, rank badge, ringed avatar, pull quote, stats ----- */
+/* reference .cd-honor: 165deg frosted gradient (goes light in light mode) + radial
+   glow, plain blue mono kicker, mode-aware text. NOT a dark slab. */
 :is(.callout[data-callout="card"][data-callout-metadata*="honor"],
     body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) {
-    background: var(--mwg-dark-surface);
-    border-color: var(--mwg-on-dark-border);
-    color: var(--mwg-on-dark);
+    position: relative;
+    background: linear-gradient(165deg, var(--mwg-raised), var(--mwg-pane));
+    border-color: var(--mwg-border-2);
+    color: var(--mwg-text);
+    overflow: hidden;
 }
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata]))::before {
+    content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: .6;
+    background: radial-gradient(120% 80% at 50% -10%, color-mix(in srgb, var(--mwg-accent) 16%, transparent), transparent 60%);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { position: relative; }
 :is(.callout[data-callout="card"][data-callout-metadata*="honor"],
     body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
 :is(.callout[data-callout="card"][data-callout-metadata*="honor"],
     body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) .callout-content > h6:first-child {
-    display: inline-block;
-    background: var(--mwg-accent);
-    color: #fff;
-    padding: 3px 10px;
-    border-radius: 5px;
+    display: block; background: none; color: var(--mwg-accent); padding: 0; border-radius: 0;
 }
 :is(.callout[data-callout="card"][data-callout-metadata*="honor"],
     body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) .callout-content > h6:first-child::before { content: none; }
@@ -3794,28 +3986,29 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
 :is(.callout[data-callout="card"][data-callout-metadata*="honor"],
     body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) :is(h2, h3) {
     font-family: var(--mwg-font-heading);
-    font-weight: 500;
-    font-size: 2em;
-    color: var(--mwg-on-dark);
+    font-weight: 700; /* ref .cd-honor .nm = 700 */
+    font-size: 1.6em;
+    color: var(--mwg-text-strong);
     margin: 8px 0 6px;
 }
 :is(.callout[data-callout="card"][data-callout-metadata*="honor"],
     body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) blockquote {
     background: none;
-    border-left: 2px solid var(--mwg-accent);
+    border-left: 2px solid var(--mwg-accent); /* ref blue left rule */
     border-radius: 0;
     font-family: var(--mwg-font-heading);
     font-style: italic;
-    font-size: 1.3em;
-    color: var(--mwg-on-dark);
+    font-size: 1.05em; /* ref ~13.5px muted */
+    color: var(--mwg-muted);
     padding: 4px 0 4px 18px;
 }
+/* ref .cd-honor .meta b = text-strong mono (NOT a big accent figure) */
 :is(.callout[data-callout="card"][data-callout-metadata*="honor"],
-    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) strong { color: var(--mwg-accent); font-size: 1.4em; }
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) strong { color: var(--mwg-text-strong); font-family: var(--mwg-font-mono); }
 :is(.callout[data-callout="card"][data-callout-metadata*="honor"],
     body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) hr {
     border: none;
-    border-top: 1px solid var(--mwg-on-dark-border);
+    border-top: 1px solid var(--mwg-border);
     margin: 14px 0;
 }
 
@@ -3874,8 +4067,8 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
     body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { padding: 20px 28px 26px; }
 :is(.callout[data-callout="card"][data-callout-metadata*="hero"],
     body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content > :is(h1, h2) {
-    font-size: 3.2em;
-    line-height: 1.02;
+    font-size: 26px; /* ref .cd-hero-dark/.cd-hero-accent h3 = 26px (was 3.2em ~51px) */
+    line-height: 1.04;
     margin: 0 0 16px;
     border: none;
 }
@@ -3885,26 +4078,21 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
    wrapper Obsidian puts the buttons paragraph in), then reset nested-card links.
    plain link = outline pill, bold link **[x](y)** = filled pill */
 :is(.callout[data-callout="card"][data-callout-metadata*="hero"],
-    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content a {
-    display: inline-block;
-    border: 1.5px solid var(--mwg-accent);
-    border-radius: 99px;
-    padding: 11px 24px;
-    margin: 16px 12px 0 0;
-    font-family: var(--mwg-font-body);
-    font-weight: 600;
-    color: var(--mwg-accent);
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content :is(a, strong a) {
+    /* reference .cd-hero a: plain mono text-arrow (NOT a pill), gap spreads on hover */
+    display: inline-flex; align-items: center; gap: 6px;
+    border: 0; background: none; border-radius: 0; padding: 0; margin: 14px 0 0;
+    font-family: var(--mwg-font-mono);
+    font-weight: 500;
+    font-size: 0.78em;
+    letter-spacing: 0.04em;
+    color: var(--mwg-accent-2); /* ref .cd-hero-dark a = teal */
     cursor: pointer;
-    transition: opacity var(--mwg-dur-fast) var(--mwg-ease);
+    text-decoration: none;
+    transition: gap .35s cubic-bezier(.32, .72, 0, 1);
 }
 :is(.callout[data-callout="card"][data-callout-metadata*="hero"],
-    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content strong a {
-    background: var(--mwg-accent);
-    color: #fff;
-    border-color: var(--mwg-accent);
-}
-:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
-    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content a:hover { opacity: 0.85; }
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content :is(a, strong a):hover { gap: 11px; }
 /* links INSIDE nested cards are not buttons — undo the pill look */
 :is(.callout[data-callout="card"][data-callout-metadata*="hero"],
     body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content .callout a {
@@ -3921,25 +4109,17 @@ body.mwg-active-line .markdown-source-view .cm-active.cm-line {
    high-specificity :is() default-class arm in the base button rule) */
 /* outline button — border + text follow the hero's text colour so it's visible on
    the coral hero (light: dark ink) AND the dark hero (dark: cream) */
-.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content a {
-    border-color: color-mix(in srgb, var(--mwg-on-accent) 55%, transparent) !important;
+/* foil hero CTA = plain WHITE text-arrow (ref .cd-hero-accent a), no pill */
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content :is(a, strong a) {
     color: var(--mwg-on-accent) !important;
-}
-.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content a:hover {
-    border-color: var(--mwg-on-accent) !important;
-    background: color-mix(in srgb, var(--mwg-on-accent) 8%, transparent) !important;
-}
-/* filled button — light: dark pill (reference) · dark: CORAL pill (matches accent) */
-.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content strong a {
-    background: var(--mwg-accent-btn-bg) !important;
-    color: var(--mwg-accent-btn-fg) !important;
-    border-color: var(--mwg-accent-btn-bg) !important;
+    background: none !important;
+    border: 0 !important;
 }
 .callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content .callout a { color: inherit !important; border: none !important; background: none !important; }
-/* Discord glyph on any "discord" link styled as a hero button */
+/* reference foil CTA is a plain "Join the Discord →" text-arrow — no glyph */
 :is(.callout[data-callout="card"][data-callout-metadata*="hero"],
     body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content a[href*="discord"]::before {
-    content: "";
+    content: none;
     display: inline-block;
     width: 1.05em;
     height: 1.05em;
@@ -4001,7 +4181,7 @@ body { --mwg-col-gap: 30px; --mwg-col-min: 200px; }
 .callout[data-callout="col"][data-callout-metadata~="w10"] { flex-grow: 10 !important; }
 /* optional hairline dividers between columns: [!columns|ruled] */
 .callout[data-callout="columns"][data-callout-metadata~="ruled"] > .callout-content > .callout[data-callout="col"] + .callout[data-callout="col"] {
-    border-left: 1px solid var(--mwg-border) !important;
+    border-left: 1px solid var(--mwg-border-2) !important;
     padding-left: var(--mwg-col-gap) !important;
 }
 
@@ -4052,46 +4232,47 @@ body { --mwg-col-gap: 30px; --mwg-col-min: 200px; }
 :is(.markdown-preview-view, .markdown-source-view, .markdown-reading-view).text-xl { --font-text-size: 20px; }
 
 /* ----- Reusable inline text utilities + inline font-size ----- */
-/* at-kicker — mono small-caps coral label with a dot (the "THE SKILL" look) */
+/* at-kicker — mono uppercase blue label (ref .at-kicker: no dot, .26em tracking) */
 .markdown-rendered .at-kicker {
     font-family: var(--mwg-font-mono);
     text-transform: uppercase;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.26em;
     font-size: 0.74em;
     font-weight: 500;
     color: var(--mwg-accent);
 }
-.markdown-rendered .at-kicker::before { content: "● "; font-size: 0.8em; vertical-align: 0.1em; }
-.markdown-rendered .at-kicker.no-dot::before { content: none; }
 
 /* at-badge — filled coral pill, mono caps (the "01 · ALL-TIME CONTRIBUTOR" look) */
 .markdown-rendered .at-badge {
     display: inline-block;
     font-family: var(--mwg-font-mono);
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     font-size: 0.72em;
     font-weight: 500;
-    background: var(--mwg-accent);
+    /* reference .at-badge: gradient pill + blue glow */
+    background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2));
     color: #fff;
-    padding: 3px 10px;
-    border-radius: 5px;
+    padding: 4px 11px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px -6px rgba(var(--mwg-accent-rgb), 0.8);
     line-height: 1.5;
 }
-/* at-badge.ghost — outline variant */
+/* at-badge.ghost — reference .at-badge.ghost: muted text, neutral border, no glow */
 .markdown-rendered .at-badge.ghost {
     background: transparent;
-    color: var(--mwg-accent);
-    border: 1px solid color-mix(in srgb, var(--mwg-accent) 50%, transparent);
+    color: var(--mwg-muted);
+    border: 1px solid var(--mwg-border-2);
+    box-shadow: none;
 }
 
 /* at-display — serif display run; <em> inside shows the coral italic emphasis */
 .markdown-rendered .at-display {
     font-family: var(--mwg-font-heading);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.55em;
     line-height: 1.12;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.02em;
     color: var(--mwg-text-strong);
 }
 .markdown-rendered .at-display em { color: var(--mwg-italic-color); font-style: italic; }
@@ -4112,9 +4293,9 @@ body { --mwg-col-gap: 30px; --mwg-col-min: 200px; }
     line-height: 1;
 }
 
-/* at-mark — soft coral highlight (alternative to ==mark==) */
+/* at-mark — soft amber highlight (reference .at-mark = amber, matches ==highlight==) */
 .markdown-rendered .at-mark {
-    background: color-mix(in srgb, var(--mwg-accent) 16%, transparent);
+    background: color-mix(in srgb, var(--mwg-gold) 30%, transparent);
     color: var(--mwg-text-strong);
     border-radius: 4px;
     padding: 0.05em 0.3em;
@@ -4143,41 +4324,22 @@ body { --mwg-col-gap: 30px; --mwg-col-min: 200px; }
    it reads as glass rather than paper. Only light/default cards are frosted; the
    dark "honor/CTA" and accent-hero surfaces stay solid for legibility.
    ========================================================================== */
+/* FLAT to match reference .cd / .cd-skill / .cd-glass: opaque surface-2, 1px
+   border-2, NO blur / sheen / rim. (Was frosted glass; user = match reference.) */
 .callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]) {
     position: relative;
-    /* translucent pane + a faint diagonal sheen so the surface reads as glass */
-    background:
-        linear-gradient(135deg,
-            color-mix(in srgb, var(--mwg-text-strong) 6%, transparent),
-            transparent 38%),
-        color-mix(in srgb, var(--mwg-pane-2) 58%, transparent);
-    -webkit-backdrop-filter: blur(var(--mwg-card-blur)) saturate(1.8);
-            backdrop-filter: blur(var(--mwg-card-blur)) saturate(1.8);
-    border: 1px solid color-mix(in srgb, var(--mwg-text-strong) 10%, transparent);
-    /* one subtle, neutral elevation — no colored or white glow */
+    background: var(--mwg-pane-2);
+    border: 1px solid var(--mwg-border-2);
     box-shadow: var(--mwg-shadow-card);
     transition:
         transform var(--mwg-dur) var(--mwg-ease-spring),
         box-shadow var(--mwg-dur) var(--mwg-ease),
         border-color var(--mwg-dur) var(--mwg-ease);
 }
-/* glassy top + left rim highlight (light catches the edge, Apple-style) */
-.callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"])::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    border-top: 1px solid color-mix(in srgb, var(--mwg-text-strong) 14%, transparent);
-    border-left: 1px solid color-mix(in srgb, var(--mwg-text-strong) 8%, transparent);
-    -webkit-mask: linear-gradient(135deg, #000, transparent 46%);
-            mask: linear-gradient(135deg, #000, transparent 46%);
-    pointer-events: none;
-    z-index: 0;
-}
 .callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]):hover {
-    transform: translateY(-4px) scale(1.006);
-    border-color: color-mix(in srgb, var(--mwg-accent) 30%, var(--mwg-border-strong));
-    box-shadow: var(--mwg-shadow-card-hover);
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--mwg-accent) 45%, var(--mwg-border-strong));
+    box-shadow: var(--mwg-shadow-lift);
 }
 /* frost the infobox too (it shares the [!infobox] name across both themes) */
 .callout[data-callout="infobox"] {
@@ -4223,3 +4385,1190 @@ body:not(.mwg-no-grad-flow):not(.mwg-no-anim) .markdown-rendered .at-gradient {
     from { background-position: 0% center; }
     to   { background-position: 100% center; }
 }
+
+
+/* ============================================================================
+   [DA cast library — cloned]  Full Digital-Archaeology cast/variant skeleton,
+   token-swapped --at-* -> --mwg-* (glass palette = the reskin). Per-block
+   callouts + cssclass casts, identical functionality to DA. Excluded: DA's own
+   base callout/card/properties/animation chrome (WG keeps its own).
+   ========================================================================== */
+/* ---------- callout --cc per-type color map (drives emotion casts) ---------- */
+.callout { --cc: rgb(var(--callout-color)); }
+/* DA's base set .callout{position:relative}; WG's base did not. Every emotion
+   cast pins decorations (pin dot, punch hole, corner brackets, stamp) with
+   position:absolute relative to the callout — without this they escape to the
+   note's top-left corner. Scoped to cast callouts only. */
+.callout[data-callout-metadata] { position: relative; }
+.callout[data-callout="note"],
+.callout[data-callout="abstract"],
+.callout[data-callout="info"]      { --cc: var(--mwg-callout-note); }
+.callout[data-callout="tip"],
+.callout[data-callout="success"],
+.callout[data-callout="check"]     { --cc: var(--mwg-callout-tip); }
+.callout[data-callout="warning"],
+.callout[data-callout="caution"]   { --cc: var(--mwg-callout-warning); }
+.callout[data-callout="question"],
+.callout[data-callout="help"]      { --cc: var(--mwg-callout-question); }
+.callout[data-callout="failure"],
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"]       { --cc: var(--mwg-callout-danger); }
+.callout[data-callout="example"]   { --cc: var(--mwg-callout-example); }
+.callout[data-callout="quote"],
+.callout[data-callout="cite"]      { --cc: var(--mwg-callout-quote); }
+
+/* ========== DA element variants (blockquote/callout casts/tags/dividers/card casts/table/code) ========== */
+/* ============================================================================
+   [DA element variants]  Digital-Archaeology-specific casts of each element.
+   SHORTCUT MODEL: auto-rendered elements (blockquote / hr / table / code /
+   properties / tags) cannot take a per-block class, so the variant is a note
+   cssclass token (works as `cssclasses: [da-bq-illum]` AND, identically, as a
+   Style-Settings body class). Per-block elements (callout / card) use a callout
+   metadata word (`[!note|seal]`, `[!card|art]`). Reference class stems kept as
+   the tokens. All colour flows through --mwg-* so it recolours per theme.
+   ========================================================================== */
+
+/* ---------- BLOCKQUOTE (no left bar — archaeology casts) ---------- */
+:is(.mw-bq-illum, .mw-bq-gloss, .mw-bq-tab) :is(blockquote, .HyperMD-quote) {
+    border-left: 0 !important;
+    background: transparent !important;
+    padding-left: 0;
+}
+/* v1 illuminated centre */
+/* illum → reference Variant A · Glass Card (.bq-card) */
+.mw-bq-illum blockquote {
+    background: var(--mwg-pane-2); border: 1px solid var(--mwg-border); border-radius: var(--mwg-radius-sm, 9px);
+    padding: 16px 18px; position: relative; text-align: left;
+}
+.mw-bq-illum blockquote::before {
+    content: ""; position: absolute; left: 0; top: 12px; bottom: 12px; width: 3px; height: auto;
+    border-radius: 3px; background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2));
+    font-size: 0; color: transparent; opacity: 1;
+}
+.mw-bq-illum blockquote::after { content: none; }
+.mw-bq-illum blockquote p { font-family: var(--mwg-font-body); font-style: italic; font-size: 15px; line-height: 1.55; padding-left: 10px; margin: 0 0 8px; }
+/* gloss → reference Variant B · Pull Quote (.bq-pull) */
+.mw-bq-gloss blockquote {
+    display: block; text-align: center; padding: 6px 14px; border: 0; background: none;
+}
+.mw-bq-gloss blockquote::before {
+    content: "\201C"; font-family: var(--mwg-font-heading); font-size: 54px; line-height: .4;
+    color: var(--mwg-accent); opacity: .4; display: block; height: 26px; writing-mode: horizontal-tb;
+    letter-spacing: 0; align-self: auto;
+}
+.mw-bq-gloss blockquote p { border-left: 0; padding-left: 0; font-size: 19px; font-weight: 500; line-height: 1.45; letter-spacing: -.01em; margin: 0 0 10px; font-style: normal; }
+.mw-bq-gloss blockquote em { font-style: italic; color: var(--mwg-accent-2); }
+/* tab → reference Variant C · Minimal Rule (.bq-min) */
+.mw-bq-tab blockquote {
+    position: relative; padding: 0 0 0 16px; text-align: left;
+    background: none !important; border: 0; border-left: 2px solid var(--mwg-border-2); border-radius: 0;
+}
+.mw-bq-tab blockquote::before, .mw-bq-tab blockquote::after { content: none; }
+.mw-bq-tab blockquote p { font-family: var(--mwg-font-body); font-size: 14.5px; font-style: italic; line-height: 1.6; color: var(--mwg-muted); margin: 0; }
+
+/* ---------- CALLOUT casts ( [!type|seal] / |folio / |marg ) ---------- */
+.callout[data-callout-metadata~="seal"],
+.callout[data-callout-metadata~="folio"],
+.callout[data-callout-metadata~="marg"] {
+    background: transparent; border: 0; border-radius: 0; padding: 0;
+    transition: transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);
+}
+/* hover lift for every structural / quote cast */
+.callout:is([data-callout-metadata~="seal"],[data-callout-metadata~="folio"],[data-callout-metadata~="marg"],[data-callout-metadata~="illum"],[data-callout-metadata~="gloss"],[data-callout-metadata~="tab"]):hover {
+    transform: translateY(-5px) !important;
+}
+/* the reference lift-shadow only on the solid-surface casts. seal/folio/marg are
+   transparent margin notes — a drop shadow there floats as a detached band, so
+   they lift WITHOUT a shadow. */
+.callout:is([data-callout-metadata~="illum"],[data-callout-metadata~="gloss"],[data-callout-metadata~="tab"]):hover {
+    box-shadow: var(--mwg-shadow-lift) !important;
+}
+/* marg = transparent margin note → lift by motion only, never a glow box.
+   (base .callout:hover applies the lift shadow; reset it here.) */
+.callout[data-callout-metadata~="marg"]:hover { box-shadow: none !important; }
+.callout[data-callout-metadata~="seal"] > .callout-title,
+.callout[data-callout-metadata~="folio"] > .callout-title,
+.callout[data-callout-metadata~="marg"] > .callout-title { padding: 0; }
+/* folio + marg carry no icon (the rail / pen glyph stand in) */
+:is(.callout[data-callout-metadata~="folio"], .callout[data-callout-metadata~="marg"]) .callout-icon { display: none; }
+
+/* seal → reference Variant A · Sealed Aside (.cast-seal): glass card, blue rules, round gradient medallion */
+.callout[data-callout-metadata~="seal"] {
+    position: relative; background: var(--mwg-pane-2); border: 1px solid var(--mwg-border-2);
+    border-radius: var(--mwg-radius-sm, 9px);
+    border-top: 2px solid color-mix(in srgb, var(--mwg-accent) 50%, transparent);
+    border-bottom: 2px solid color-mix(in srgb, var(--mwg-accent) 22%, transparent);
+    padding: 15px 16px 15px 52px;
+}
+.callout[data-callout-metadata~="seal"] > .callout-title { position: static; }
+.callout[data-callout-metadata~="seal"] .callout-icon {
+    position: absolute; left: 13px; top: 14px; transform: none; margin: 0; padding: 0 !important;
+    width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; line-height: 0;
+    background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2));
+    box-shadow: 0 0 0 3px var(--mwg-editor), 0 6px 14px -6px rgba(61, 143, 230, .8);
+}
+.callout[data-callout-metadata~="seal"] .callout-icon :is(svg, .svg-icon) {
+    color: #fff; width: 12px !important; height: 12px !important; margin: 0 !important; display: block;
+}
+.callout[data-callout-metadata~="seal"] .callout-title-inner {
+    color: var(--mwg-accent); text-transform: uppercase; letter-spacing: .12em;
+    font-family: var(--mwg-font-mono); font-size: 10.5px; font-weight: 600;
+}
+
+/* v2 folio strip — vertical label rail (rail = the title text) */
+.callout[data-callout-metadata~="folio"] {
+    display: grid; grid-template-columns: 26px 1fr; overflow: hidden; border-radius: var(--radius-s);
+    background: var(--mwg-pane-2); border: 1px solid var(--mwg-border);
+}
+.callout[data-callout-metadata~="folio"] > .callout-title {
+    grid-row: 1 / 99; writing-mode: vertical-rl; text-orientation: mixed;
+    background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2)); color: var(--mwg-on-dark);
+    display: grid; place-items: center; font-family: var(--mwg-font-mono); font-size: 8.5px;
+    letter-spacing: .2em; text-transform: uppercase; padding: 10px 0;
+}
+.callout[data-callout-metadata~="folio"] > .callout-title,
+.callout[data-callout-metadata~="folio"] > .callout-title .callout-title-inner { color: #fff !important; }
+.callout[data-callout-metadata~="folio"] > .callout-content { padding: 16px 18px; }
+
+/* marg → reference Variant C · Marginalia (.cast-marg): dashed left rule, teal italic title */
+.callout[data-callout-metadata~="marg"] { position: relative; border-left: 2px dashed var(--mwg-border-2); padding: 6px 0 6px 16px; }
+.callout[data-callout-metadata~="marg"]::before { content: none; }
+/* marg hover: lift + visible shadow (it has a pane-2 box) + dashed rule brightens to accent */
+.callout[data-callout-metadata~="marg"]:hover { transform: translateY(-4px) !important; box-shadow: 0 22px 48px -26px rgba(0,0,0,.7) !important; background: var(--mwg-pane-2) !important; border-left-color: var(--mwg-accent-2) !important; }
+.callout[data-callout-metadata~="marg"] .callout-title-inner {
+    font-family: var(--mwg-font-body) !important; font-size: 14px !important; font-style: italic !important;
+    text-transform: none !important; letter-spacing: 0 !important; font-weight: 400 !important; color: var(--mwg-accent-2);
+}
+
+/* ---------- TAGS (catalogue pill / wax dot / index slip) ---------- */
+:is(.mw-tag-wax, .mw-tag-slip) :is(.tag, a.tag) { background: none; }
+/* reference .tg:hover — lift -2px, NO shadow (spring) */
+:is(.mw-tag-pill, .mw-tag-wax, .mw-tag-slip) :is(.tag, a.tag) { transition: transform .35s cubic-bezier(.32, .72, 0, 1), background .3s, color .3s, border-color .3s, filter .3s; }
+:is(.mw-tag-pill, .mw-tag-wax, .mw-tag-slip) :is(.tag, a.tag):hover { transform: translateY(-2px); }
+/* pill → reference Variant A · Catalog Pill (.tg-pill) with blue lead-dot */
+.mw-tag-pill :is(.tag, a.tag) {
+    padding: 4px 11px 4px 9px; color: var(--mwg-muted); background: var(--mwg-pane-2);
+    border: 1px solid var(--mwg-border-2); border-radius: 7px;
+}
+.mw-tag-pill :is(.tag, a.tag)::before {
+    content: ""; display: inline-block; width: 5px; height: 5px; border-radius: 50%;
+    background: var(--mwg-accent); vertical-align: middle; margin-right: 6px;
+}
+.mw-tag-pill :is(.tag, a.tag):hover { border-color: var(--mwg-accent); color: var(--mwg-accent); }
+/* wax → reference Variant B · Ghost Hash (.tg-ghost): dashed pill, teal hash (the # is Obsidian's own) */
+.mw-tag-wax :is(.tag, a.tag) {
+    padding: 4px 12px; color: var(--mwg-muted); background: transparent;
+    border: 1px dashed var(--mwg-border-2); border-radius: 20px;
+}
+.mw-tag-wax :is(.tag, a.tag):hover { border-style: solid; border-color: var(--mwg-accent-2); color: var(--mwg-text); }
+/* slip → reference Variant C · Gradient Slip (.tg-grad) */
+.mw-tag-slip :is(.tag, a.tag) {
+    padding: 4px 11px 4px 9px; color: var(--mwg-on-dark, #fff);
+    background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2)); border: 0;
+    border-radius: 4px 11px 11px 4px; box-shadow: 0 4px 12px -6px rgba(61, 143, 230, .8);
+}
+.mw-tag-slip :is(.tag, a.tag):hover { filter: brightness(1.1); }
+
+/* per-block tag rows — > [!tags|pill] / |wax / |slip  (all 3 can live in one note,
+   unlike the note-wide mw-tag-* cssclass). Quartz-portable (data-callout-metadata). */
+.callout[data-callout="tags"] {
+    background: transparent !important; border: 0 !important; box-shadow: none !important; padding: 0; margin: .6em 0;
+}
+.callout[data-callout="tags"] > .callout-title { display: none; }
+.callout[data-callout="tags"]:hover { transform: none; box-shadow: none !important; }
+.callout[data-callout="tags"] { overflow: visible !important; }
+.callout[data-callout="tags"] > .callout-content { padding: 4px 0 0; overflow: visible; }
+.callout[data-callout="tags"] > .callout-content > p { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; overflow: visible; }
+.callout[data-callout="tags"] :is(a.tag, .tag) {
+    font-family: var(--mwg-font-mono); font-size: 0.82em; line-height: 1.4; letter-spacing: .04em; text-transform: uppercase; text-decoration: none;
+    position: relative; z-index: 0;
+    transition: transform .25s var(--mwg-ease), background .3s ease, color .3s ease, border-color .3s ease, filter .3s ease;
+}
+/* hover: lift + sit above neighbours (headroom from content padding-top) */
+.callout[data-callout="tags"] :is(a.tag, .tag):hover { transform: translateY(-2px) !important; z-index: 2; }
+.callout[data-callout="tags"][data-callout-metadata~="pill"] :is(a.tag, .tag) {
+    padding: 4px 11px 4px 9px; color: var(--mwg-muted); background: var(--mwg-pane-2) !important; border: 1px solid var(--mwg-border-2); border-radius: 7px;
+}
+.callout[data-callout="tags"][data-callout-metadata~="pill"] :is(a.tag, .tag)::before {
+    content: ""; display: inline-block; width: 5px; height: 5px; border-radius: 50%; vertical-align: middle;
+    background: var(--mwg-accent); margin-right: 6px;
+}
+.callout[data-callout="tags"][data-callout-metadata~="pill"] :is(a.tag, .tag):hover { background: var(--mwg-pane-2) !important; border-color: var(--mwg-accent); color: var(--mwg-accent); }
+.callout[data-callout="tags"][data-callout-metadata~="wax"] :is(a.tag, .tag) {
+    padding: 4px 12px; color: var(--mwg-muted); background: transparent !important; border: 1px dashed var(--mwg-border-2); border-radius: 20px;
+}
+.callout[data-callout="tags"][data-callout-metadata~="wax"] :is(a.tag, .tag):hover { background: transparent !important; color: var(--mwg-text); border-style: solid; border-color: var(--mwg-accent-2); }
+.callout[data-callout="tags"][data-callout-metadata~="slip"] :is(a.tag, .tag) {
+    padding: 4px 11px 4px 9px; color: var(--mwg-on-dark, #fff); background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2)) !important;
+    border: 0; border-radius: 4px 11px 11px 4px; box-shadow: 0 4px 12px -6px rgba(61, 143, 230, .8);
+}
+.callout[data-callout="tags"][data-callout-metadata~="slip"] :is(a.tag, .tag):hover { background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2)) !important; color: var(--mwg-on-dark, #fff); filter: brightness(1.1); }
+
+/* ---------- DIVIDERS ( da-hr-ros / da-hr-fl / da-hr-str ) ---------- */
+:is(.mw-hr-ros, .mw-hr-fl, .mw-hr-str) hr {
+    border: 0; height: auto; background: none; text-align: center; overflow: visible;
+}
+/* ros → reference Variant A · Node (.dv-dot): line — glowing orbit dot — line */
+.mw-hr-ros hr { position: relative; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--mwg-border-2), transparent); margin: 26px 0; }
+.mw-hr-ros hr::after {
+    content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 7px; height: 7px; border-radius: 50%; padding: 0; font-size: 0;
+    background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2));
+    box-shadow: 0 0 10px rgba(61, 143, 230, .6);
+}
+/* fl → reference Variant B · Gradient Fade (.dv-fade) */
+.mw-hr-fl hr {
+    position: relative; height: 2px; width: auto; margin: 26px 0; border-radius: 2px; overflow: visible;
+    background: linear-gradient(90deg, var(--mwg-accent), var(--mwg-accent-2), transparent);
+}
+.mw-hr-fl hr::after { content: none; }
+/* str → reference Variant C · Labelled (.dv-lbl): line — § — line */
+.mw-hr-str hr {
+    position: relative; height: 1px; width: auto; margin: 26px 0; overflow: visible;
+    background: var(--mwg-border-2);
+}
+.mw-hr-str hr::after {
+    content: "\00A7"; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    background: var(--mwg-editor); padding: 0 12px; color: var(--mwg-faint, var(--mwg-muted));
+    font-family: var(--mwg-font-mono); font-size: 11px; letter-spacing: .2em;
+}
+
+/* ---------- DIVIDER per-block casts ( [!hr|ros] / |fl / |str ) ----------
+   per-block, no cssclass — an <hr> can't carry metadata but a callout can.
+   Empty callout; all chrome stripped, the rule is drawn on the box itself.   */
+.callout[data-callout="hr"] {
+    border: 0 !important; background: none !important; box-shadow: none !important;
+    padding: 0 !important; margin: 26px 0 !important; position: relative; height: 18px;
+    display: flex; align-items: center;
+}
+.callout[data-callout="hr"] > * { display: none !important; }
+
+/* ros = ref .dv-dot: gradient hairline with a centered glowing gradient orb */
+.callout[data-callout="hr"][data-callout-metadata~="ros"]::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; transform: translateY(-50%);
+    background: linear-gradient(90deg, transparent, var(--mwg-border-2), transparent);
+}
+.callout[data-callout="hr"][data-callout-metadata~="ros"]::after {
+    content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: 7px; height: 7px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--mwg-accent), var(--mwg-accent-2));
+    box-shadow: 0 0 10px rgba(var(--mwg-accent-rgb), .6);
+}
+
+/* fl = ref .dv-fade: 2px blue→teal→transparent gradient bar (matches `fl` and `fleur`) */
+.callout[data-callout="hr"][data-callout-metadata~="fl"]::before,
+.callout[data-callout="hr"][data-callout-metadata~="fleur"]::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 2px; transform: translateY(-50%);
+    border-radius: 2px; background: linear-gradient(90deg, var(--mwg-accent), var(--mwg-accent-2), transparent);
+}
+
+/* str = ref .dv-lbl: hairline — mono label — hairline. Label = the callout title
+   (`> [!hr|str] Section`); with no title it degrades to a centered hairline. */
+.callout[data-callout="hr"][data-callout-metadata~="str"] { justify-content: center; gap: 12px; }
+.callout[data-callout="hr"][data-callout-metadata~="str"]::before,
+.callout[data-callout="hr"][data-callout-metadata~="str"]::after {
+    content: ""; flex: 1; height: 1px; background: var(--mwg-border-2);
+}
+.callout[data-callout="hr"][data-callout-metadata~="str"] > .callout-title {
+    display: block !important; flex: 0 0 auto; padding: 0; background: none !important;
+    font-family: var(--mwg-font-mono); font-size: 9.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--mwg-faint);
+}
+.callout[data-callout="hr"][data-callout-metadata~="str"] > .callout-title .callout-icon { display: none; }
+
+/* ---------- CARD casts ( [!card|art] / |plate / |fieldnote ) ---------- */
+.callout[data-callout="card"][data-callout-metadata~="art"] {
+    background: var(--mwg-pane-2); border: 1px solid var(--mwg-border-2); border-radius: var(--radius-m); padding: 18px;
+}
+.callout[data-callout="card"][data-callout-metadata~="plate"] {
+    background: var(--mwg-bg-0); border: 1px solid var(--mwg-border-2); border-radius: var(--radius-s); padding: 8px;
+}
+.callout[data-callout="card"][data-callout-metadata~="plate"] > .callout-content {
+    border: 1px solid var(--mwg-border-2); border-radius: 3px; padding: 18px 16px 14px; position: relative;
+    background: linear-gradient(160deg, var(--mwg-pane-2), var(--mwg-pane));
+}
+.callout[data-callout="card"][data-callout-metadata~="plate"] > .callout-content::before {
+    content: ""; position: absolute; inset: 5px; border: 1px dotted var(--mwg-border-2); border-radius: 2px; pointer-events: none;
+}
+/* field-note = parchment index card; paper flips per mode (matches reference --paper) */
+.callout[data-callout="card"][data-callout-metadata~="fieldnote"] {
+    background: var(--mwg-paper); color: var(--mwg-paper-ink); border: 0; border-radius: 4px; padding: 16px 18px;
+    box-shadow: none; position: relative; overflow: hidden;   /* hover-only shadow (via base card:hover) */
+}
+.callout[data-callout="card"][data-callout-metadata~="fieldnote"]::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+    background: repeating-linear-gradient(var(--mwg-accent) 0 2px, transparent 2px 7px); opacity: .5;
+}
+.callout[data-callout="card"][data-callout-metadata~="fieldnote"] :is(h1,h2,h3,h4,p) { color: var(--mwg-paper-ink); }
+
+/* card casts use the content model: `###### kicker` + `### title` + body, ALL
+   inside the card (so the plate heading lives inside its inner frame, not above
+   it). hide the auto title; style the heading; resting drop shadow per reference. */
+.callout[data-callout="card"][data-callout-metadata~="art"] > .callout-title,
+.callout[data-callout="card"][data-callout-metadata~="plate"] > .callout-title,
+.callout[data-callout="card"][data-callout-metadata~="fieldnote"] > .callout-title { display: none !important; }
+.callout[data-callout="card"]:is([data-callout-metadata~="art"],[data-callout-metadata~="plate"],[data-callout-metadata~="fieldnote"]) > .callout-content > h3 {
+    font-family: var(--mwg-font-heading); font-weight: 500; font-size: 1.5em; line-height: 1.15;
+    color: var(--mwg-text-strong); margin: 2px 0 8px; border: 0; padding: 0;
+}
+/* ----- match the reference card motion + shadows (element-variations-2.html):
+   transition ease-out-expo .5s; lift -5px; per-variant shadow —
+   art   -> hover only  0 20px 40px -24px /.6
+   plate -> none (lift only)
+   note  -> resting     0 8px 20px -12px /.5 (unchanged on hover) ----- */
+.callout[data-callout="card"]:is([data-callout-metadata~="art"],[data-callout-metadata~="plate"],[data-callout-metadata~="fieldnote"]) {
+    transition: transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1), border-color .4s ease !important;
+}
+.callout[data-callout="card"]:is([data-callout-metadata~="art"],[data-callout-metadata~="plate"],[data-callout-metadata~="fieldnote"]):hover {
+    transform: translateY(-5px) !important; border-color: var(--mwg-border-2) !important;
+}
+.callout[data-callout="card"][data-callout-metadata~="art"]:hover { box-shadow: 0 20px 40px -24px rgba(0,0,0,.6) !important; }
+.callout[data-callout="card"][data-callout-metadata~="plate"]:hover { box-shadow: none !important; }
+.callout[data-callout="card"][data-callout-metadata~="fieldnote"],
+.callout[data-callout="card"][data-callout-metadata~="fieldnote"]:hover { box-shadow: 0 8px 20px -12px rgba(0,0,0,.5) !important; }
+/* kicker (h6) has no leading dot in the reference */
+.callout[data-callout="card"]:is([data-callout-metadata~="art"],[data-callout-metadata~="plate"],[data-callout-metadata~="fieldnote"]) > .callout-content > h6:first-child::before { content: none !important; }
+/* fieldnote kicker = handwritten date, not mono caps */
+.callout[data-callout="card"][data-callout-metadata~="fieldnote"] > .callout-content > h6:first-child {
+    font-family: var(--mwg-font-hand) !important; text-transform: none !important; letter-spacing: 0 !important;
+    font-size: 1.15em !important; color: var(--mwg-accent) !important;
+}
+/* ruled-copy lines under the body text (starts after the heading) */
+.callout[data-callout="card"][data-callout-metadata~="fieldnote"] > .callout-content > p {
+    line-height: 28px;
+    background: repeating-linear-gradient(to bottom, transparent 0 27px, color-mix(in srgb, var(--mwg-accent) 22%, transparent) 27px 28px);
+}
+
+/* ---------- TABLE ( da-tbl-ledger / da-tbl-box ) ---------- */
+.mw-tbl-ledger table th { border-bottom: 1.5px solid var(--mwg-border-2); }
+.mw-tbl-ledger table td { border-bottom: 1px solid var(--mwg-border); }
+.mw-tbl-ledger table tr:hover td { background: color-mix(in srgb, var(--mwg-accent) 8%, transparent); }
+.mw-tbl-box table { border: 1px solid var(--mwg-border-2); }
+.mw-tbl-box table th { background: var(--mwg-pane-2); border: 1px solid var(--mwg-border-2); }
+.mw-tbl-box table td { border: 1px solid var(--mwg-border); font-family: var(--mwg-font-mono); font-size: 0.92em; }
+
+/* ---------- CODE BLOCK clay-tablet ( da-cb-clay ) ---------- */
+.mw-cb-clay :is(.markdown-rendered pre, .HyperMD-codeblock-bg) {
+    border: 0 !important;
+    background: linear-gradient(160deg, var(--mwg-accent-2), var(--mwg-muted)) !important;
+    border-radius: 6px; padding: 6px;
+}
+.mw-cb-clay .markdown-rendered pre > code {
+    display: block; background: color-mix(in srgb, var(--mwg-bg-0) 80%, var(--mwg-accent-2));
+    color: var(--mwg-on-dark); border-radius: 5px; padding: 12px 14px;
+}
+
+
+/* ========== DA image figure cast  [!fig|plate/tape/medallion/duotone/blueprint] ========== */
+/* ---------- IMAGE FIGURE cast ( [!fig|plate] / tape / medallion / duotone / blueprint ) ----------
+   > [!fig|plate] Caption text
+   > ![[gear.svg]]
+   Image first, caption (the callout title) below it — drawn as a mono/hand label.
+   Renders 1:1 on Quartz (data-callout-metadata + .internal-embed img).            */
+.callout[data-callout="fig"] {
+    background: transparent !important; border: 0 !important; box-shadow: none !important;
+    padding: 0; margin: 1.6em 0; display: flex; flex-direction: column;
+}
+.callout[data-callout="fig"] > .callout-content { order: 1; margin: 0; }
+.callout[data-callout="fig"] > .callout-title,
+.callout[data-callout="fig"] > .callout-title .callout-title-inner { order: 2; justify-content: center; padding: 0; margin-top: 10px;
+    font-family: var(--mwg-font-mono) !important; font-size: 11px !important; font-weight: 500 !important; letter-spacing: .08em !important;
+    text-transform: uppercase !important; color: var(--mwg-faint) !important; }
+.callout[data-callout="fig"] > .callout-title .callout-icon { display: none; }
+.callout[data-callout="fig"] .internal-embed, .callout[data-callout="fig"] .image-embed { display: block; }
+.callout[data-callout="fig"] img { width: 100%; height: auto; display: block; border-radius: var(--radius-s); }
+/* default / frame — matted rectangle so ANY photo + caption looks finished */
+.callout[data-callout="fig"]:not([data-callout-metadata]) > .callout-content,
+.callout[data-callout="fig"][data-callout-metadata~="frame"] > .callout-content {
+    background: var(--mwg-pane-2); border: 1px solid var(--mwg-border-2); border-radius: var(--radius-m);
+    padding: 8px; box-shadow: var(--mwg-shadow-pop); }
+/* float a figure beside the prose (image-beside-text without column nesting) */
+.callout[data-callout="fig"][data-callout-metadata~="right"] { float: right; width: 320px; margin: 6px 0 16px 26px; }
+.callout[data-callout="fig"][data-callout-metadata~="left"]  { float: left;  width: 320px; margin: 6px 26px 16px 0; }
+@media (max-width: 640px) {
+    .callout[data-callout="fig"][data-callout-metadata~="right"],
+    .callout[data-callout="fig"][data-callout-metadata~="left"] { float: none; width: auto; margin: 1.6em 0; }
+}
+/* plate — dotted specimen mount */
+.callout[data-callout="fig"][data-callout-metadata~="plate"] > .callout-content {
+    position: relative; background: var(--mwg-bg-0); border: 1px solid var(--mwg-border-2);
+    border-radius: var(--radius-s); padding: 14px; }
+.callout[data-callout="fig"][data-callout-metadata~="plate"] > .callout-content::before {
+    content: ""; position: absolute; inset: 8px; border: 1px dotted var(--mwg-border-2); border-radius: 3px; pointer-events: none; z-index: 1; }
+/* tape — taped photo, hand caption, slight tilt */
+.callout[data-callout="fig"][data-callout-metadata~="tape"] > .callout-content {
+    position: relative; max-width: 380px; margin: 8px auto 0; background: var(--mwg-paper); padding: 12px 12px 8px;
+    border-radius: 2px; box-shadow: 0 10px 26px -14px rgba(0,0,0,.55); transform: rotate(-1.2deg); }
+.callout[data-callout="fig"][data-callout-metadata~="tape"] > .callout-content::before {
+    content: ""; position: absolute; top: -10px; left: 50%; transform: translateX(-50%) rotate(2deg); width: 88px; height: 22px;
+    background: color-mix(in srgb, var(--mwg-gold) 55%, transparent); border: 1px solid color-mix(in srgb, var(--mwg-gold) 70%, transparent); }
+.callout[data-callout="fig"][data-callout-metadata~="tape"] img { filter: grayscale(.3) sepia(.4); }
+.callout[data-callout="fig"][data-callout-metadata~="tape"] > .callout-title {
+    font-family: var(--mwg-font-hand); font-size: 1.3rem; color: var(--mwg-paper-ink); text-transform: none; letter-spacing: 0; }
+/* medallion — double-ring circle */
+.callout[data-callout="fig"][data-callout-metadata~="medallion"] > .callout-content {
+    width: 220px; height: 220px; margin: 0 auto; border-radius: 50%; overflow: hidden;
+    border: 3px double var(--mwg-accent); padding: 6px; background: var(--mwg-pane-2); }
+.callout[data-callout="fig"][data-callout-metadata~="medallion"] img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+/* duotone — copper wash */
+.callout[data-callout="fig"][data-callout-metadata~="duotone"] img {
+    filter: sepia(1) saturate(1.4) hue-rotate(335deg) contrast(.95); border-radius: var(--radius-s); }
+body.theme-dark .callout[data-callout="fig"][data-callout-metadata~="duotone"] img {
+    filter: sepia(1) saturate(1.2) hue-rotate(335deg) brightness(.85) contrast(1.05); }
+/* blueprint — gridded diagram inset */
+.callout[data-callout="fig"][data-callout-metadata~="blueprint"] > .callout-content {
+    background:
+        linear-gradient(color-mix(in srgb, var(--mwg-accent) 8%, transparent) 1px, transparent 1px) 0 0/22px 22px,
+        linear-gradient(90deg, color-mix(in srgb, var(--mwg-accent) 8%, transparent) 1px, transparent 1px) 0 0/22px 22px,
+        var(--mwg-pane-2);
+    border: 1px solid var(--mwg-border-2); border-radius: var(--radius-s); padding: 20px; }
+
+/* hero — a constrained banner; caps tall images so they read like a web hero,
+   not a wall-filling photo. Editorial: wide, shallow, framed. */
+.callout[data-callout="fig"][data-callout-metadata~="hero"] > .callout-content {
+    border: 1px solid var(--mwg-border-2); border-radius: var(--radius-m); overflow: hidden; box-shadow: var(--mwg-shadow-pop); }
+.callout[data-callout="fig"][data-callout-metadata~="hero"] img {
+    width: 100%; max-height: 340px; object-fit: cover; object-position: center 38%; border-radius: 0; }
+
+/* image embedded in an infobox — fills the top "plate" slot, edge to edge */
+.callout[data-callout="infobox"] .internal-embed { display: block; }
+.callout[data-callout="infobox"] .internal-embed img { width: 100%; display: block; border-radius: var(--radius-s); margin: 0 0 10px; }
+
+
+/* ========== DA infobox variants  [!infobox|codex/manifest/tag] ========== */
+/* ============================================================================
+   [DA infobox variants]  reference look from PLAIN markdown — no raw HTML.
+   You write:  > [!infobox|codex] Title         (codex / manifest / tag)
+               > Subtitle line   (optional)
+               >
+               > | Key | Value |  +  |--|--|  +  rows
+   CSS draws every decorative part (image plate, wax seal, punch hole) as
+   pseudo-elements, and the manifest table is laid out as a 2×2 stat grid.
+   th (the table's required header row) is styled identically to td, so the
+   first key/value pair is NOT lost. Renders 1:1 on Quartz (data-callout-metadata).
+   ========================================================================== */
+:is(.callout[data-callout="infobox"][data-callout-metadata~="codex"],
+    .callout[data-callout="infobox"][data-callout-metadata~="manifest"],
+    .callout[data-callout="infobox"][data-callout-metadata~="tag"]) .callout-icon { display: none; }
+/* kill the inherited copper tab title (bg + glow + rounded corner + inline-flex)
+   so the title reads as plain text like the reference */
+:is(.callout[data-callout="infobox"][data-callout-metadata~="codex"],
+    .callout[data-callout="infobox"][data-callout-metadata~="manifest"],
+    .callout[data-callout="infobox"][data-callout-metadata~="tag"]) > .callout-title {
+    background: transparent !important; box-shadow: none !important; border-radius: 0 !important;
+    display: block !important; width: auto !important; margin: 0 !important;
+}
+/* Keep the markdown "| Key | Value |" HEADER hidden for ALL variants — the
+   reference infoboxes show only the data rows (Type/Vendor/Released, etc.). Base
+   already hides thead; manifest re-show is corrected below. */
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] thead { display: none !important; }
+
+/* v1 codex — encyclopedia sidebar: title + image-or-urn plate + subtitle + rows.
+   flex-ordered so the plate (image when given, else the urn glyph) always sits
+   directly under the title, like a Wikipedia infobox. */
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] {
+    position: relative;
+    background: var(--mwg-pane-2); border: 1px solid var(--mwg-border-2); border-radius: var(--radius-l); overflow: hidden; padding: 0;
+    display: flex; flex-direction: column;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="codex"]::before { order: 1; }
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] > .callout-content { order: 2; }
+.callout[data-callout="infobox"][data-callout-metadata~="codex"]::before {
+    content: "\2756"; display: grid; place-items: center; height: 168px;
+    font-family: var(--mwg-font-heading); font-size: 46px; color: var(--mwg-accent); opacity: .9; text-shadow: 0 4px 18px color-mix(in srgb, var(--mwg-accent) 45%, transparent);
+    /* ref .ib-codex .plate: radial blue 34% @50% 16% + linear surface-3 → bg-elev */
+    background:
+        radial-gradient(120% 90% at 50% 16%, color-mix(in srgb, var(--mwg-accent) 34%, transparent), transparent 62%),
+        linear-gradient(160deg, var(--mwg-surface-3), var(--mwg-bg-elev));
+    border-bottom: 1px solid var(--mwg-border-2);
+}
+/* cap = ref .ib-codex .plate .cap: overlaid at the plate's bottom-left, NOT a top band.
+   ponytail: top:142px = plate height 168 − ~26px cap line; stable because plate height is fixed. */
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] > .callout-title {
+    position: absolute; left: 16px; top: 142px; z-index: 2; padding: 0; background: transparent !important;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] .callout-title-inner {
+    /* plain mono cap (ref codex has no pill) — kill the inherited gradient pill */
+    font-family: var(--mwg-font-mono); font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--mwg-faint); background: none; padding: 0; border-radius: 0; line-height: 1.4; display: inline;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] > .callout-content { padding: 0 0 6px; }
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] > .callout-content > p:not(:has(.internal-embed)) {
+    font-family: var(--mwg-font-heading); font-style: italic; font-size: 13px; color: var(--mwg-muted); margin: 0 16px 8px;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] table { width: 100%; border-collapse: collapse; margin: 0; }
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] :is(th, td) {
+    padding: 8px 16px; border-bottom: 1px solid var(--mwg-border); font-size: 0.82em; vertical-align: top; text-align: left; font-weight: 400;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] tr :is(th, td):first-child {
+    font-family: var(--mwg-font-mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--mwg-accent); width: 88px; white-space: nowrap;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] tr:last-child :is(th, td) { border-bottom: 0; }
+/* the urn glyph is the EMPTY-STATE placeholder; a supplied image replaces it and
+   fills the same top plate slot, full-bleed with a divider under it. */
+.callout[data-callout="infobox"][data-callout-metadata~="codex"]:has(.internal-embed)::before { display: none; }
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] .callout-content > p:has(.internal-embed) { margin: 0 0 8px !important; }
+.callout[data-callout="infobox"][data-callout-metadata~="codex"] .internal-embed img {
+    width: 100%; height: 168px; object-fit: cover; object-position: center; display: block;
+    border-radius: 0; border-bottom: 1px solid var(--mwg-border-2); margin: 0; }
+
+/* v2 manifest — wax-sealed stat dossier: dotted inset + cert seal + 2×2 grid */
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] {
+    position: relative; border: 1px solid var(--mwg-border-2); border-radius: var(--radius-l); padding: 18px; overflow: hidden;
+    background: var(--mwg-pane-2);
+}
+/* ref ib-manifest is a clean 2×2 + glow — no dotted inset, no wax seal */
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"]::before { content: none; }
+/* ref ::after glow (radial accent, opacity .5) */
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"]::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+    background: radial-gradient(120% 90% at 50% 0, color-mix(in srgb, var(--mwg-accent) 16%, transparent), transparent 60%);
+}
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] > :is(.callout-title, .callout-content) { position: relative; z-index: 1; }
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] > .callout-title { padding-right: 0; }
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] .callout-title-inner {
+    /* ref .k kicker = blue mono, NOT a pill */
+    font-family: var(--mwg-font-mono); font-size: 9.5px; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--mwg-accent); background: none; padding: 0; border-radius: 0; display: inline;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] > .callout-title::after { content: none; }
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] > .callout-content { margin-top: 12px; }
+/* lay the 2-col table out as a 2×2 stat grid (each row → a number-over-label cell) */
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] table {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin: 0;
+    background: var(--mwg-border); border: 1px solid var(--mwg-border); border-radius: var(--radius-s); overflow: hidden;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] tbody { display: contents; }
+/* column-reverse so the VALUE (markdown 2nd cell) renders big ON TOP, label below — ref .st = number over label */
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] tr { display: flex; flex-direction: column-reverse; justify-content: flex-end; background: var(--mwg-bg-elev); padding: 11px 13px; }
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] :is(th, td) { border: 0; padding: 0; text-align: left; font-weight: 400; }
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] tr :is(th, td):first-child {
+    font-family: var(--mwg-font-mono); font-size: 8.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--mwg-faint); margin-top: 2px;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] tr :is(th, td):last-child {
+    font-family: var(--mwg-font-mono); font-size: 19px; color: var(--mwg-text); letter-spacing: -.02em;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="manifest"] > .callout-content > p {
+    font-family: var(--mwg-font-body); font-style: italic; font-size: 12.5px; color: var(--mwg-muted); margin: 13px 0 0;
+}
+
+/* tag = reference ib-float — clean glass floating-fact card: pill tag + title +
+   italic subtitle + flex key/value rows with top hairlines. (Was DA parchment.) */
+.callout[data-callout="infobox"][data-callout-metadata~="tag"] {
+    position: relative; background: var(--mwg-pane-2); color: var(--mwg-text);
+    border: 1px solid var(--mwg-border-2); border-radius: var(--radius-l); padding: 0; overflow: hidden;
+    box-shadow: var(--mwg-shadow-card);
+}
+/* callout-title stays the inherited gradient PILL (ref .tag) — just position it */
+.callout[data-callout="infobox"][data-callout-metadata~="tag"] > .callout-title { padding: 14px 14px 0; }
+/* big title = h2 (ref .t 20px); subtitle = first italic p (ref .s italic muted) */
+.callout[data-callout="infobox"][data-callout-metadata~="tag"] > .callout-content > :is(h1, h2):first-child { padding: 6px 16px 0; margin: 0; }
+.callout[data-callout="infobox"][data-callout-metadata~="tag"] > .callout-content > p:first-of-type {
+    font-family: var(--mwg-font-body); font-style: italic; font-size: 12.5px; color: var(--mwg-muted); margin: 2px 16px 12px; padding: 0;
+}
+/* rows: full-width, top hairline, mono uppercase key + right-aligned value */
+.callout[data-callout="infobox"][data-callout-metadata~="tag"] table { width: 100%; border-collapse: collapse; margin: 0; }
+.callout[data-callout="infobox"][data-callout-metadata~="tag"] :is(th, td) {
+    padding: 7px 16px; border-top: 1px solid var(--mwg-border); font-size: 12.5px; font-weight: 400; text-align: left;
+}
+.callout[data-callout="infobox"][data-callout-metadata~="tag"] tr :is(th, td):first-child {
+    font-family: var(--mwg-font-mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; color: var(--mwg-muted);
+}
+.callout[data-callout="infobox"][data-callout-metadata~="tag"] tr :is(th, td):last-child { text-align: right; color: var(--mwg-text); }
+
+
+/* ========== DA heading casts  (cssclass mw-h-rule/illum/marg) ========== */
+/* ============================================================================
+   [DA heading casts]  note-level cssclass → all headings in the note take the
+   cast. Reading view (the published surface). Three forms from the reference:
+     mw-h-rule   · Inscribed Rule  — ruled underline under each heading
+     mw-h-illum  · Illuminated     — wax-seal block initial + copper rule fading
+     mw-h-marg   · Numbered Marginalia — auto upper-roman numeral in the margin
+   ========================================================================== */
+/* v1 inscribed rule */
+.mw-h-rule :is(h1, h2, h3) {
+    border-bottom: 1px solid var(--mwg-border-2);
+    padding-bottom: 8px;
+}
+/* illum → reference Variant B · Gradient Display (.h-grad) */
+.mw-h-illum :is(h1, h2, h3) {
+    display: block; border: 0; border-image: none; padding-bottom: 0;
+    font-weight: 700; letter-spacing: -.02em; line-height: 1.08;
+    background: linear-gradient(100deg, var(--mwg-accent), var(--mwg-accent-2), var(--mwg-grad-3, #a855f7), var(--mwg-accent));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.mw-h-illum :is(h2, h3)::before { content: none; }
+/* marg → reference Variant C · Accent Bar (.h-bar): vertical gradient pip */
+.mw-h-marg { counter-reset: none; }
+.mw-h-marg :is(h1, h2, h3) { position: relative; padding-left: 18px; border: 0; }
+.mw-h-marg :is(h1, h2, h3)::before {
+    content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+    width: 4px; height: 78%; min-height: 1em; border-radius: 3px; margin: 0;
+    background: linear-gradient(var(--mwg-accent), var(--mwg-accent-2)); opacity: 1; font-size: inherit;
+}
+
+
+/* ========== DA per-block casts via callouts  [!quote|] [!table|] [!code|] + heading #tags ========== */
+/* ============================================================================
+   [DA PER-BLOCK casts via CALLOUTS]  cast ONE block inline, no note-wide
+   cssclass — and it renders identically on Quartz (its ofm transformer emits
+   data-callout + data-callout-metadata; verified). Use:
+     > [!quote|illum]   / |gloss / |tab        (a blockquote)
+     > [!table|ledger]  / |box   + a md table   (wrap the table in the callout)
+     > [!code|bar] file.log  / |clay + a fenced block
+   Heading per block: add a trailing tag →  ## Title #illum   (or #rule / #marg)
+   The note-wide mw-* cssclass casts still exist for styling a whole note at once.
+   ========================================================================== */
+
+/* strip callout chrome for quote + table (code keeps a title bar) */
+:is(.callout[data-callout="quote"], .callout[data-callout="table"]) {
+    background: transparent !important; border: 0 !important; box-shadow: none !important;
+    border-radius: 0; padding: 0; margin: 1em 0;
+}
+:is(.callout[data-callout="quote"], .callout[data-callout="table"]) > .callout-title { display: none; }
+/* ref .variant:hover — every showcase block (quote/table/code) lifts as a frosted
+   card with the standard lift shadow (0 22px 48px -26px rgba(0,0,0,.7) =
+   --mwg-shadow-lift, light). Resting stays integrated; only hover adds surface+shadow. */
+:is(.callout[data-callout="quote"], .callout[data-callout="table"], .callout[data-callout="code"]) {
+    transition: transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s cubic-bezier(.16,1,.3,1), background .3s, border-color .3s;
+}
+:is(.callout[data-callout="quote"], .callout[data-callout="table"], .callout[data-callout="code"]):hover {
+    transform: translateY(-4px);
+    background: var(--mwg-pane-2) !important;
+    border-color: var(--mwg-border-2) !important;
+    box-shadow: var(--mwg-shadow-lift) !important;
+}
+
+/* resting = integrated (transparent, no chrome). Hover lift + shadow is handled by
+   the shared .variant-style rule above (quote/table/code together). */
+.callout[data-callout="quote"] {
+    border-radius: 6px; padding: 8px 14px;
+}
+/* author line = the callout title, shown below the quote */
+.callout[data-callout="quote"] { display: flex; flex-direction: column; }
+.callout[data-callout="quote"] > .callout-title {
+    display: block !important; order: 2; margin-top: 6px;
+    font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 400;
+    color: var(--mwg-faint); opacity: .85; background: transparent !important;
+}
+.callout[data-callout="quote"] > .callout-title .callout-icon { display: none; }
+/* ---- QUOTE casts — each mapped to its stated intent in note 05 and the matching
+   reference design:  illum = illuminated CENTRE (.bq-pull) · gloss = quiet marginal
+   gloss (.bq-min) · tab = tabbed PLATE (.bq-card). ---- */
+
+/* illum = bq-pull: centered pull quote with a big opening mark */
+.callout[data-callout="quote"][data-callout-metadata~="illum"] > .callout-content {
+    text-align: center; padding: 6px 14px;
+}
+.callout[data-callout="quote"][data-callout-metadata~="illum"] > .callout-content::before {
+    content: "\201C"; font-family: var(--mwg-font-heading); font-size: 54px; line-height: .4;
+    color: var(--mwg-accent); opacity: .4; display: block; height: 26px;
+}
+.callout[data-callout="quote"][data-callout-metadata~="illum"] > .callout-content p {
+    font-size: 19px; font-weight: 500; line-height: 1.45; letter-spacing: -.01em; margin: 0 0 10px; font-style: normal;
+}
+.callout[data-callout="quote"][data-callout-metadata~="illum"] > .callout-content p em { font-style: italic; color: var(--mwg-accent-2); }
+.callout[data-callout="quote"][data-callout-metadata~="illum"] > .callout-title {
+    text-align: center; font-family: var(--mwg-font-mono); font-style: normal;
+    font-size: 9.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--mwg-faint); opacity: 1;
+}
+
+/* gloss = bq-min: quiet marginal gloss — thin left rule, muted italic */
+/* no own `background` — base keeps it transparent at rest; the shared :hover rule
+   then fills pane-2 like illum/tab (a redundant `transparent !important` here used
+   to block the hover surface, making gloss hover differently from illum). */
+.callout[data-callout="quote"][data-callout-metadata~="gloss"] {
+    padding: 0 0 0 16px; border-left: 2px solid var(--mwg-border-2); text-align: left;
+}
+.callout[data-callout="quote"][data-callout-metadata~="gloss"]::before,
+.callout[data-callout="quote"][data-callout-metadata~="gloss"]::after { content: none; }
+.callout[data-callout="quote"][data-callout-metadata~="gloss"] > .callout-content p {
+    font-family: var(--mwg-font-body); font-style: italic; font-size: 14.5px; line-height: 1.6; color: var(--mwg-muted); margin: 0;
+}
+.callout[data-callout="quote"][data-callout-metadata~="gloss"] > .callout-title { text-align: left; padding-left: 0; }
+
+/* tab = bq-card: tabbed plate — glass card, gradient left bar, left-aligned italic */
+.callout[data-callout="quote"][data-callout-metadata~="tab"] {
+    background: var(--mwg-pane-2) !important; border: 1px solid var(--mwg-border) !important;
+    border-radius: 9px; padding: 16px 18px; position: relative;
+}
+.callout[data-callout="quote"][data-callout-metadata~="tab"]::before {
+    content: ""; position: absolute; left: 0; top: 12px; bottom: 12px; width: 3px;
+    border-radius: 3px; background: linear-gradient(180deg, var(--mwg-accent), var(--mwg-accent-2));
+}
+.callout[data-callout="quote"][data-callout-metadata~="tab"] > .callout-content { text-align: left; padding: 0; }
+.callout[data-callout="quote"][data-callout-metadata~="tab"] > .callout-content p {
+    font-family: var(--mwg-font-body); font-style: italic; font-size: 15px; line-height: 1.55; margin: 0 0 8px; padding-left: 10px;
+}
+.callout[data-callout="quote"][data-callout-metadata~="tab"] > .callout-title {
+    text-align: left; padding-left: 10px; font-family: var(--mwg-font-mono); font-style: normal;
+    font-size: 9.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--mwg-faint); opacity: 1;
+}
+
+/* ---- TABLE casts ---- */
+.callout[data-callout="table"] > .callout-content table { width: 100%; border-collapse: collapse; margin: 0; font-size: 0.92em; }
+/* ledger = ref .tbl-ledger: header rule, muted body rows, accent row-hover */
+.callout[data-callout="table"][data-callout-metadata~="ledger"] th { border-bottom: 1.5px solid var(--mwg-border-2); text-align: left; }
+.callout[data-callout="table"][data-callout-metadata~="ledger"] td { border-bottom: 1px solid var(--mwg-border); color: var(--mwg-muted); }
+.callout[data-callout="table"][data-callout-metadata~="ledger"] tr:hover td { background: color-mix(in srgb, var(--mwg-accent) 9%, transparent); color: var(--mwg-text); }
+/* box = ref .tbl-ch: bordered card, hairline row tops only, teal first column */
+.callout[data-callout="table"][data-callout-metadata~="box"] table { border: 1px solid var(--mwg-border); border-radius: var(--radius-s); overflow: hidden; }
+.callout[data-callout="table"][data-callout-metadata~="box"] th { background: var(--mwg-pane-2); text-align: left; }
+.callout[data-callout="table"][data-callout-metadata~="box"] td { border-top: 1px solid var(--mwg-border); font-family: var(--mwg-font-mono); font-size: 12px; color: var(--mwg-muted); }
+.callout[data-callout="table"][data-callout-metadata~="box"] td:first-child { color: var(--mwg-accent-2); }
+
+/* ---- CODE casts (keep the title as a terminal bar) ---- */
+.callout[data-callout="code"] {
+    background: transparent !important; border: 1px solid var(--mwg-border-2) !important; box-shadow: none !important;
+    padding: 0; border-radius: var(--radius-s); overflow: hidden;
+}
+.callout[data-callout="code"] > .callout-content { padding: 0; }
+.callout[data-callout="code"] > .callout-content :is(pre, .HyperMD-codeblock-bg) { margin: 0; border-radius: 0; }
+.callout[data-callout="code"] > .callout-title {
+    padding: 7px 13px; background: var(--mwg-pane-2); border-bottom: 1px solid var(--mwg-border);
+    font-family: var(--mwg-font-mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--mwg-faint);
+}
+.callout[data-callout="code"] > .callout-title .callout-icon { display: none; }
+.callout[data-callout="code"] > .callout-title .callout-title-inner { color: inherit !important; }
+/* the vault runs the code-styler plugin, which injects its own blue header +
+   line-number gutter + language icon into the fence. Inside our casts we draw
+   the chrome ourselves — strip code-styler's so it matches the reference (and
+   Quartz, which has no code-styler, already renders the plain fence). */
+.callout[data-callout="code"] .code-styler-header-container { display: none !important; }
+/* ROOT CAUSE of the bottom gap: code-styler reserves header-height space on the
+   code block via min-height:var(--container-min-height). We hide its header, so
+   that reserved band shows as dead space. Zero the var + min-height inside casts. */
+.callout[data-callout="code"] { --container-min-height: 0px !important; --container-height: 0px !important; }
+.callout[data-callout="code"] :is(pre, .code-styler-pre, .code-styler-scroll-wrapper) { min-height: 0 !important; }
+/* THE bottom-gap fix (verified in a browser repro of code-styler's real DOM):
+   code-styler keeps the copy/run/clear buttons (and other injected widgets) in
+   normal flow at the bottom of the <pre>, reserving a line box. Take everything
+   in the pre EXCEPT the <code> out of flow so the frame hugs the code. */
+.callout[data-callout="code"] pre.code-styler-pre > :not(code) { position: absolute !important; }
+/* code-emitter (only injects for runnable langs) — hide its panel/output too */
+.callout[data-callout="code"] :is(.code-emitter-block, .code-output, code.language-output) { display: none !important; }
+/* keep only the code text on each line — drop the number/gutter/fold widgets
+   that render as tofu boxes down the left */
+.callout[data-callout="code"] .code-styler-line > :not(.code-styler-line-text) { display: none !important; }
+.callout[data-callout="code"] .code-styler-line-text { padding-left: 0 !important; }
+/* body padding — own ALL of it on the pre and zero code-styler's <code> padding
+   so the frame hugs the text symmetrically (no bottom-heavy band). */
+.callout[data-callout="code"] > .callout-content pre { padding: 13px 15px !important; }
+.callout[data-callout="code"] pre > code { padding: 0 !important; }
+/* code-styler tags the callout-content as .code-styler-pre-parent and gives it
+   margin-bottom:16px -> a band inside the frame below the code (light extra pad
+   on bar, a thick dark strip on clay). Remove it so the frame hugs the code. */
+.callout[data-callout="code"] > .callout-content,
+.callout[data-callout="code"] .code-styler-pre-parent { margin-bottom: 0 !important; }
+
+/* ---- GLOBAL: the same cleanup for BARE fences (a plain ```lang block NOT
+   wrapped in a [!code] cast). All the rules above are scoped to the cast, so a
+   bare fence kept code-styler/code-emitter's in-flow run button (▶), output box,
+   and reserved bottom band — the stray rounded rule + triangle in reading view.
+   Reading-view only, so Live Preview / editing is untouched. ---- */
+.markdown-reading-view pre.code-styler-pre {
+    --container-min-height: 0px !important; --container-height: 0px !important; min-height: 0 !important;
+}
+/* take everything in the pre except the actual <code> out of flow → no reserved band */
+.markdown-reading-view pre.code-styler-pre > :not(code) { position: absolute !important; }
+/* kill code-emitter / execute-code run buttons + output panels outright */
+.markdown-reading-view :is(
+    .code-emitter-block, .code-output, code.language-output,
+    .code-styler-run-button, .run-button, button.run-code-button, .run-code-button
+) { display: none !important; }
+.markdown-reading-view .code-styler-line > :not(.code-styler-line-text) { display: none !important; }
+
+/* bar = plain titled terminal (the previously-missing variant) */
+.callout[data-callout="code"][data-callout-metadata~="bar"] pre { background: var(--mwg-pane) !important; }
+.callout[data-callout="code"][data-callout-metadata~="bar"] > .callout-title {
+    display: flex; align-items: center; justify-content: flex-end; position: relative; padding-left: 58px;
+}
+.callout[data-callout="code"][data-callout-metadata~="bar"] > .callout-title::before {
+    /* ref .cb .dots: three colored mac traffic lights (red/yellow/green) */
+    content: ""; position: absolute; left: 13px; top: 50%; transform: translateY(-50%); width: 40px; height: 9px;
+    background-image:
+        radial-gradient(circle at 4.5px 50%, #ff5f57 4.5px, transparent 0),
+        radial-gradient(circle at 18.5px 50%, #febc2e 4.5px, transparent 0),
+        radial-gradient(circle at 32.5px 50%, #28c840 4.5px, transparent 0);
+}
+/* clay = ref .cb-min: minimal accent-rail — thin border + 3px blue left rail, no
+   title bar, bare pre. (Was DA's clay tablet; reskinned to the glass reference.) */
+.callout[data-callout="code"][data-callout-metadata~="clay"] {
+    border: 1px solid var(--mwg-border) !important; border-left: 3px solid var(--mwg-accent) !important;
+    background: var(--mwg-pane) !important; border-radius: var(--radius-s);
+}
+.callout[data-callout="code"][data-callout-metadata~="clay"] > .callout-title { display: none !important; }
+.callout[data-callout="code"][data-callout-metadata~="clay"] pre { background: transparent !important; }
+
+/* ---- HEADING per-block via a trailing tag (Quartz renders inline tags too) ----
+   ##  Title #illum   →  styled heading + the #illum chip itself is hidden.
+   Values mirror element-variations-2.html (h-insc / h-marg / h-illum). */
+:is(h1, h2, h3, h4) a.tag[href$="illum" i],
+:is(h1, h2, h3, h4) a.tag[href$="rule" i],
+:is(h1, h2, h3, h4) a.tag[href$="marg" i] { display: none; }
+/* shared cast face = IM Fell, weight 400 */
+:is(h1,h2,h3):has(a.tag[href$="rule" i]),
+:is(h1,h2,h3):has(a.tag[href$="illum" i]),
+:is(h1,h2,h3):has(a.tag[href$="marg" i]) {
+    font-family: var(--mwg-font-heading) !important; font-weight: 400 !important; letter-spacing: -.01em;
+}
+
+/* --- A · Inscribed Rule: kicker + 30px title + copper-tinted underline ---
+   kicker lives INSIDE the heading as <small> → one block, no inter-block gap.
+   Syntax:  ### <small>CHAPTER II</small> Strata of the Harbour #rule          */
+:is(h1, h2, h3):has(a.tag[href$="rule" i]) {
+    font-size: 30px !important; line-height: 1.1;
+    border-bottom: 1px solid color-mix(in srgb, var(--mwg-accent) 26%, transparent); padding-bottom: 8px; margin-bottom: 8px;
+}
+:is(h1, h2, h3):has(a.tag[href$="rule" i]) small {
+    display: block; font-family: var(--mwg-font-mono); font-size: 10px; line-height: 1; letter-spacing: .3em;
+    text-transform: uppercase; color: var(--mwg-accent); font-weight: 500; margin-bottom: 6px;
+}
+
+/* --- C · Illuminated: 36px wax block + 30px title + rule fading right --- */
+:is(h1, h2, h3):has(a.tag[href$="illum" i]) {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-size: 30px !important;
+    border-bottom: 2px solid transparent; border-image: linear-gradient(90deg, var(--mwg-accent), transparent) 1; padding-bottom: 14px;
+}
+:is(h1, h2, h3):has(a.tag[href$="illum" i])::before {
+    content: ""; flex: none; width: 24px; height: 24px; border-radius: 6px;
+    background: radial-gradient(circle at 30% 30%, var(--mwg-accent), var(--mwg-accent-2)); box-shadow: inset 0 0 0 1px rgba(255,255,255,.12);
+}
+
+/* --- B · Numbered Marginalia: italic copper numeral + 27px title + subtitle --- */
+.markdown-preview-view, .markdown-reading-view { counter-reset: da-marg; }
+:is(h1, h2, h3):has(a.tag[href$="marg" i]) {
+    display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; font-size: 27px !important;
+    counter-increment: da-marg; border: 0; padding: 0;
+}
+:is(h1, h2, h3):has(a.tag[href$="marg" i])::before {
+    content: counter(da-marg, upper-roman); flex: none;
+    font-family: var(--mwg-font-heading); font-style: italic; font-size: 34px; line-height: .9; color: var(--mwg-accent); opacity: .7;
+}
+.el-h2:has(a.tag[href$="marg" i]) + .el-h6 > h6,
+.el-h3:has(a.tag[href$="marg" i]) + .el-h6 > h6,
+:is(h2,h3):has(a.tag[href$="marg" i]) + h6 {
+    font-family: var(--mwg-font-mono) !important; font-size: 10px !important; letter-spacing: .16em !important;
+    text-transform: uppercase; color: var(--mwg-faint) !important; font-weight: 400; margin: -6px 0 0 50px !important; border: 0 !important; padding: 0 !important;
+}
+
+/* ---- SECTION heading rule: line begins after the title and fades right
+   (reference .ghead .ln). Plain top-level h1/h2 only — not the cast headings. ---- */
+.markdown-preview-sizer > .el-h1 > h1:not(:has(a.tag)),
+.markdown-preview-sizer > .el-h2 > h2:not(:has(a.tag)) {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 16px; border-bottom: 0 !important;
+}
+.markdown-preview-sizer > .el-h1 > h1:not(:has(a.tag))::after,
+.markdown-preview-sizer > .el-h2 > h2:not(:has(a.tag))::after {
+    content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--mwg-border-2), transparent);
+}
+/* ---- native heading levels h3–h6: a distinct DA marker per level
+   (top-level only; cast headings, and card/callout headings, are excluded) ---- */
+/* h3 — short copper rule before the title */
+/* Reference plain headings carry NO leading marker (ref .ty h3/h4); h5 = muted bold, not mono. */
+/* h5 — muted small bold (ref .ty h5: 13.5px/600/muted, NOT mono/accent) */
+.markdown-preview-view h5, .markdown-reading-view h5 {
+    font-size: .85em; font-weight: 600; color: var(--mwg-muted);
+}
+/* h6 — faint mono kicker (matches the kicker used by the casts) */
+.markdown-preview-view h6, .markdown-reading-view h6 {
+    font-family: var(--mwg-font-mono) !important; text-transform: uppercase; letter-spacing: .2em; font-size: .74em; color: var(--mwg-faint);
+}
+
+/* (infobox raw-HTML CSS removed — infoboxes are pure-markdown callouts above) */
+
+
+/* ========== DA callout EMOTION casts  (26 per-type [!type|cast]) ========== */
+/* ============================================================================
+   [DA callout EMOTION casts]  26 opt-in per-type casts (mock v3 -> theme).
+   100% ADDITIVE: every rule requires a NEW metadata word, so plain callouts,
+   seal/folio/marg, fig/infobox/table/code casts and the medallion default are
+   untouched. Colliding words (slip/tape/tag/plate/manifest already used by
+   tags/fig/infobox) are TYPE-LOCKED so they cannot leak. Icon language matches
+   seal/marg: wax disc, engraved glyph, pen hand, drawn object, none.
+   Aged paper: one tiled fractal-noise tile (rasterized once - cheap) + edge
+   vignette. Modern motion: paper-lift, wax press, flag wave, stamp ink.
+   ========================================================================== */
+.callout { --paper-noise: none; }
+
+/* ---- shared cast surface: parchment fibre + aged vignette + paper-lift ----
+   scoped to NATIVE types x any cast word, so it never touches non-native casts */
+.callout:is([data-callout="note"],[data-callout="abstract"],[data-callout="info"],[data-callout="todo"],[data-callout="tip"],[data-callout="hint"],[data-callout="important"],[data-callout="success"],[data-callout="check"],[data-callout="done"],[data-callout="question"],[data-callout="help"],[data-callout="faq"],[data-callout="warning"],[data-callout="caution"],[data-callout="attention"],[data-callout="failure"],[data-callout="fail"],[data-callout="missing"],[data-callout="danger"],[data-callout="error"],[data-callout="bug"],[data-callout="example"]):is([data-callout-metadata~="card"],[data-callout-metadata~="slip"],[data-callout-metadata~="pin"],[data-callout-metadata~="placard"],[data-callout-metadata~="plaque"],[data-callout-metadata~="entry"],[data-callout-metadata~="flag"],[data-callout-metadata~="lamp"],[data-callout-metadata~="dogear"],[data-callout-metadata~="stamp"],[data-callout-metadata~="tick"],[data-callout-metadata~="ribbon"],[data-callout-metadata~="tape"],[data-callout-metadata~="stencil"],[data-callout-metadata~="barrier"],[data-callout-metadata~="query"],[data-callout-metadata~="tag"],[data-callout-metadata~="ponder"],[data-callout-metadata~="condemn"],[data-callout-metadata~="fragile"],[data-callout-metadata~="klaxon"],[data-callout-metadata~="specimen"],[data-callout-metadata~="plate"],[data-callout-metadata~="tray"],[data-callout-metadata~="checklist"],[data-callout-metadata~="manifest"]) {
+    border-radius: var(--radius-s);
+    box-shadow: none;
+    transition: transform .45s cubic-bezier(.16,1,.3,1), box-shadow .45s cubic-bezier(.16,1,.3,1), border-color .3s, background .3s;
+}
+.callout:is([data-callout="note"],[data-callout="abstract"],[data-callout="info"],[data-callout="todo"],[data-callout="tip"],[data-callout="hint"],[data-callout="important"],[data-callout="success"],[data-callout="check"],[data-callout="done"],[data-callout="question"],[data-callout="help"],[data-callout="faq"],[data-callout="warning"],[data-callout="caution"],[data-callout="attention"],[data-callout="failure"],[data-callout="fail"],[data-callout="missing"],[data-callout="danger"],[data-callout="error"],[data-callout="bug"],[data-callout="example"]):is([data-callout-metadata~="card"],[data-callout-metadata~="slip"],[data-callout-metadata~="pin"],[data-callout-metadata~="placard"],[data-callout-metadata~="plaque"],[data-callout-metadata~="entry"],[data-callout-metadata~="flag"],[data-callout-metadata~="lamp"],[data-callout-metadata~="dogear"],[data-callout-metadata~="stamp"],[data-callout-metadata~="tick"],[data-callout-metadata~="ribbon"],[data-callout-metadata~="tape"],[data-callout-metadata~="stencil"],[data-callout-metadata~="barrier"],[data-callout-metadata~="query"],[data-callout-metadata~="tag"],[data-callout-metadata~="ponder"],[data-callout-metadata~="condemn"],[data-callout-metadata~="fragile"],[data-callout-metadata~="klaxon"],[data-callout-metadata~="specimen"],[data-callout-metadata~="plate"],[data-callout-metadata~="tray"],[data-callout-metadata~="checklist"],[data-callout-metadata~="manifest"]):hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 48px -26px rgba(0,0,0,.7);
+}
+
+/* alignment fix: base .callout-title carries an extra 12px left padding that
+   .callout-content lacks, so a de-iconed cast title sits 12px right of its body.
+   Reference .co aligns title + text on one left edge — zero the title's left pad
+   (per-cast rail padding lives on the callout, so rails stay clear). */
+.callout:is([data-callout="note"],[data-callout="abstract"],[data-callout="summary"],[data-callout="info"],[data-callout="tip"],[data-callout="hint"],[data-callout="important"],[data-callout="success"],[data-callout="check"],[data-callout="done"],[data-callout="question"],[data-callout="help"],[data-callout="faq"],[data-callout="warning"],[data-callout="caution"],[data-callout="attention"],[data-callout="failure"],[data-callout="fail"],[data-callout="missing"],[data-callout="danger"],[data-callout="error"],[data-callout="bug"],[data-callout="example"],[data-callout="todo"])[data-callout-metadata] > .callout-title {
+    padding-left: 0;
+}
+
+/* ============ NOTE ============ */
+/* card - catalogue index card, engraved number */
+/* card → reference §06 .cast-card: index card, top-centre punch, faint № top-right, tilt on HOVER (not at rest) */
+.callout[data-callout-metadata~="card"]:not([data-callout="card"]) { padding-top: 20px; border-left-width: 1px; }
+.callout[data-callout-metadata~="card"]:not([data-callout="card"]):hover { transform: rotate(-1.4deg) translateY(-3px) !important; box-shadow: 0 18px 38px -24px rgba(0,0,0,.7) !important; }
+.callout[data-callout-metadata~="card"]:not([data-callout="card"]) > .callout-title { border-bottom: 0 !important; }
+.callout[data-callout-metadata~="card"]:not([data-callout="card"]) > .callout-title > .callout-icon { display: none; }
+.callout[data-callout-metadata~="card"]:not([data-callout="card"]) > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--cc); }
+.callout[data-callout-metadata~="card"]:not([data-callout="card"])::before { content: ""; position: absolute; left: 50%; top: 7px; transform: translateX(-50%); width: 20px; height: 5px; border-radius: 3px; background: var(--mwg-bg-0); box-shadow: inset 0 1px 2px rgba(0,0,0,.6); }
+.callout[data-callout-metadata~="card"]:not([data-callout="card"])::after { content: "\2116 12"; position: absolute; right: 12px; top: 9px; font-family: var(--mwg-font-mono); font-size: 11px; color: var(--mwg-faint); }
+/* slip - dog-eared filing slip, pen hand (TYPE-LOCKED: tags also uses "slip") */
+.callout:is([data-callout="note"],[data-callout="abstract"])[data-callout-metadata~="slip"] { border-left-width: 1px; }
+.callout:is([data-callout="note"],[data-callout="abstract"])[data-callout-metadata~="slip"] > .callout-title { border-bottom: 0 !important; }
+.callout:is([data-callout="note"],[data-callout="abstract"])[data-callout-metadata~="slip"] > .callout-title > .callout-icon { display: none; }
+.callout:is([data-callout="note"],[data-callout="abstract"])[data-callout-metadata~="slip"] > .callout-title::before { content: "\270E"; color: var(--cc); font-size: 1.1em; margin-right: 3px; }
+.callout:is([data-callout="note"],[data-callout="abstract"])[data-callout-metadata~="slip"] .callout-title-inner { font-family: var(--mwg-font-body) !important; font-style: italic !important; font-weight: 400 !important; text-transform: none !important; letter-spacing: 0 !important; font-size: 14px !important; color: var(--cc) !important; }
+.callout:is([data-callout="note"],[data-callout="abstract"])[data-callout-metadata~="slip"]::after { content: ""; position: absolute; bottom: 0; right: 0; border-width: 0 0 22px 22px; border-style: solid; border-color: transparent transparent var(--mwg-pane) transparent; filter: drop-shadow(-2px -2px 2px rgba(0,0,0,.18)); }
+/* pin - sheet held by a copper push-pin, object */
+.callout[data-callout-metadata~="pin"] { margin-top: 20px; border-left-width: 1px; overflow: visible; }
+.callout[data-callout-metadata~="pin"] > .callout-title > .callout-icon { display: none; }
+.callout[data-callout-metadata~="pin"]::before { content: ""; position: absolute; top: -11px; left: 50%; transform: translateX(-50%); width: 18px; height: 18px; border-radius: 50%; background: var(--mwg-accent); box-shadow: 0 2px 5px -2px rgba(0,0,0,.4); transition: transform .4s cubic-bezier(.16,1,.3,1); }
+.callout[data-callout-metadata~="pin"]:hover::before { transform: translateX(-50%) scale(1.14); }
+.callout[data-callout-metadata~="pin"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+
+/* ============ INFO ============ */
+/* placard - museum exhibit label, none */
+.callout[data-callout-metadata~="placard"] { text-align: center; border: 0; border-radius: 0; background: transparent; border-top: 2px solid var(--cc); border-bottom: 2px solid var(--cc); box-shadow: none; }
+.callout[data-callout-metadata~="placard"] > .callout-title { justify-content: center; border-bottom: 0 !important; }
+.callout[data-callout-metadata~="placard"] > .callout-title > .callout-icon { display: none; }
+.callout[data-callout-metadata~="placard"] .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .22em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+.callout[data-callout-metadata~="placard"] .callout-content { text-align: center; }
+.callout[data-callout-metadata~="placard"]:hover { box-shadow: none; } /* transparent cast: lift via translateY only, no detached box-shadow */
+/* plaque - framed emphatic-info label (glass: flat surface-2, accent-tinted frame + flat icon chip) */
+.callout[data-callout-metadata~="plaque"] { border: 1px solid color-mix(in srgb, var(--cc) 38%, var(--mwg-border-2)); background: var(--mwg-pane-2); box-shadow: none; }
+.callout[data-callout-metadata~="plaque"] > .callout-title > .callout-icon { background: color-mix(in srgb, var(--cc) 18%, transparent) !important; box-shadow: none !important; border-radius: 7px !important; padding: 4px !important; box-sizing: content-box !important; }
+.callout[data-callout-metadata~="plaque"] > .callout-title > .callout-icon :is(svg, .svg-icon) { color: var(--cc) !important; }
+.callout[data-callout-metadata~="plaque"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* entry - ledger row led by a catalogue number, glyph rail */
+.callout[data-callout-metadata~="entry"] { padding-left: 64px; }
+.callout[data-callout-metadata~="entry"] > .callout-title > .callout-icon { display: none; }
+.callout[data-callout-metadata~="entry"]::before { content: "\2116"; position: absolute; left: 0; top: 0; bottom: 0; width: 48px; display: flex; align-items: center; justify-content: center; font-family: var(--mwg-font-mono); font-size: 20px; color: var(--cc); background: color-mix(in srgb, var(--cc) 12%, transparent); border-right: 1px solid var(--mwg-border-2); }
+.callout[data-callout-metadata~="entry"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+
+/* ============ TIP ============ */
+/* flag - excavation find-flag, object pennant */
+/* flag → reference §06 .cast-flag: border-2 pole + type-coloured pennant, waving CONTINUOUSLY */
+.callout[data-callout-metadata~="flag"] { padding-left: 46px; }
+.callout[data-callout-metadata~="flag"] > .callout-title > .callout-icon { display: none; }
+.callout[data-callout-metadata~="flag"]::before { content: ""; position: absolute; left: 20px; top: 13px; bottom: 13px; width: 2px; background: var(--mwg-border-2); }
+.callout[data-callout-metadata~="flag"]::after { content: ""; position: absolute; left: 22px; top: 13px; width: 18px; height: 13px; background: var(--cc); clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%); transform-origin: left center; animation: mwg-wave 2.6s ease-in-out infinite; }
+@keyframes mwg-wave { 0%,100% { transform: none; } 50% { transform: skewY(-6deg) scaleX(1.04); } }
+.callout[data-callout-metadata~="flag"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* icon-chip casts: center the title row against the taller rounded chip */
+.callout:is([data-callout-metadata~="lamp"], [data-callout-metadata~="plaque"], [data-callout-metadata~="tick"], [data-callout-metadata~="ribbon"]) > .callout-title { align-items: center !important; }
+/* lamp - lit info panel (glass: flat accent-tint fill, accent-bordered, flat icon chip) */
+.callout[data-callout-metadata~="lamp"] { background: color-mix(in srgb, var(--cc) 7%, var(--mwg-pane-2)); border-color: color-mix(in srgb, var(--cc) 22%, var(--mwg-border-2)); }
+.callout[data-callout-metadata~="lamp"] > .callout-title > .callout-icon { background: color-mix(in srgb, var(--cc) 18%, transparent) !important; box-shadow: none !important; border-radius: 7px !important; padding: 4px !important; box-sizing: content-box !important; }
+.callout[data-callout-metadata~="lamp"] > .callout-title > .callout-icon :is(svg, .svg-icon) { color: var(--cc) !important; }
+.callout[data-callout-metadata~="lamp"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* dogear - folded-corner aside, pen hand */
+.callout[data-callout-metadata~="dogear"] > .callout-title { border-bottom: 0 !important; }
+.callout[data-callout-metadata~="dogear"] > .callout-title > .callout-icon { display: none; }
+.callout[data-callout-metadata~="dogear"] > .callout-title::before { content: "\273A"; color: var(--cc); font-size: 1.1em; margin-right: 4px; }
+.callout[data-callout-metadata~="dogear"] .callout-title-inner { font-family: var(--mwg-font-body) !important; font-style: italic !important; font-weight: 400 !important; text-transform: none !important; letter-spacing: 0 !important; font-size: 14px !important; color: var(--cc) !important; }
+.callout[data-callout-metadata~="dogear"]::after { content: ""; position: absolute; top: 0; right: 0; border-width: 24px 24px 0 0; border-style: solid; border-color: color-mix(in srgb, var(--cc) 42%, transparent) var(--mwg-pane) transparent transparent; }
+
+/* ============ SUCCESS ============ */
+/* stamp - APPROVED rubber-stamp, stamp box + VERIFIED mark */
+/* stamp → reference §06 .cast-stamp: plain title + a rotated "Approved" ink stamp top-right (no boxed icon) */
+.callout[data-callout-metadata~="stamp"] { overflow: hidden; }
+.callout[data-callout-metadata~="stamp"] > .callout-title > .callout-icon { display: none; }
+.callout[data-callout-metadata~="stamp"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+.callout[data-callout-metadata~="stamp"]::after { content: "Approved"; position: absolute; right: 10px; top: 13px; border: 2px solid color-mix(in srgb, var(--cc) 70%, transparent); color: color-mix(in srgb, var(--cc) 82%, white); font-family: var(--mwg-font-mono); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 3px 8px; border-radius: 5px; transform: rotate(-9deg); opacity: .85; }
+/* tick - check sigil (glass: flat accent-tint chip + accent glyph) */
+.callout[data-callout-metadata~="tick"] > .callout-title > .callout-icon { background: color-mix(in srgb, var(--cc) 18%, transparent) !important; box-shadow: none !important; border-radius: 7px !important; padding: 4px !important; box-sizing: content-box !important; }
+.callout[data-callout-metadata~="tick"] > .callout-title > .callout-icon :is(svg, .svg-icon) { color: var(--cc) !important; }
+.callout[data-callout-metadata~="tick"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* ribbon - award rosette (glass: flat solid-accent medal disc + two accent tails) */
+.callout[data-callout-metadata~="ribbon"] > .callout-title > .callout-icon { position: relative; overflow: visible; background: var(--cc) !important; border-radius: 50% !important; padding: 4px !important; box-sizing: content-box !important; box-shadow: 0 2px 6px -2px rgba(0,0,0,.4) !important; transition: transform .4s ease; }
+.callout[data-callout-metadata~="ribbon"] > .callout-title > .callout-icon :is(svg, .svg-icon) { color: #fff !important; }
+.callout[data-callout-metadata~="ribbon"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+.callout[data-callout-metadata~="ribbon"] > .callout-title > .callout-icon::before, .callout[data-callout-metadata~="ribbon"] > .callout-title > .callout-icon::after { content: ""; position: absolute; top: 24px; width: 8px; height: 14px; background: var(--cc); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%); }
+.callout[data-callout-metadata~="ribbon"] > .callout-title > .callout-icon::before { left: 5px; transform: rotate(12deg); }
+.callout[data-callout-metadata~="ribbon"] > .callout-title > .callout-icon::after { right: 5px; transform: rotate(-12deg); }
+.callout[data-callout-metadata~="ribbon"]:hover > .callout-title > .callout-icon { transform: rotate(10deg); }
+
+/* ============ WARNING ============ */
+/* GLASS REDESIGN: the 3 warning casts map onto the reference's 3 callout treatments
+   (.co top-accent / .co-tint framed / .co left-bar) — digital surfaces, no physical
+   props (was: barricade tape / shipping-crate stencil / road barrier = DA skeuomorphism). */
+/* tape → top-accent notice: solid accent rule across the top + ! prefix */
+.callout:is([data-callout="warning"],[data-callout="caution"],[data-callout="attention"])[data-callout-metadata~="tape"] { padding-top: 22px; }
+.callout:is([data-callout="warning"],[data-callout="caution"],[data-callout="attention"])[data-callout-metadata~="tape"]::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--cc); border-radius: var(--radius-s) var(--radius-s) 0 0; }
+.callout:is([data-callout="warning"],[data-callout="caution"],[data-callout="attention"])[data-callout-metadata~="tape"] > .callout-title > .callout-icon { display: none; }
+.callout:is([data-callout="warning"],[data-callout="caution"],[data-callout="attention"])[data-callout-metadata~="tape"] .callout-title-inner::before { content: "! "; font-weight: 700; color: var(--cc); }
+.callout:is([data-callout="warning"],[data-callout="caution"],[data-callout="attention"])[data-callout-metadata~="tape"] .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* stencil → framed alert: accent tint fill + full 1px accent border + flat triangle chip */
+.callout[data-callout-metadata~="stencil"] { border: 1px solid color-mix(in srgb, var(--cc) 40%, var(--mwg-border-2)); background: color-mix(in srgb, var(--cc) 9%, var(--mwg-pane-2)); }
+.callout[data-callout-metadata~="stencil"] > .callout-title { align-items: center !important; }
+.callout[data-callout-metadata~="stencil"] > .callout-title > .callout-icon { background: color-mix(in srgb, var(--cc) 18%, transparent) !important; border: 0 !important; box-shadow: none !important; transform: none !important; border-radius: 7px !important; padding: 4px !important; box-sizing: content-box !important; }
+.callout[data-callout-metadata~="stencil"] > .callout-title > .callout-icon :is(svg, .svg-icon) { color: var(--cc) !important; }
+.callout[data-callout-metadata~="stencil"] .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; -webkit-text-stroke: 0; color: var(--cc); }
+/* barrier → flagged item: thick solid accent left bar + flat triangle chip */
+.callout[data-callout-metadata~="barrier"] { border-left: 5px solid var(--cc); padding-left: 16px; }
+.callout[data-callout-metadata~="barrier"]::before { content: none; }
+.callout[data-callout-metadata~="barrier"] > .callout-title { align-items: center !important; }
+.callout[data-callout-metadata~="barrier"] > .callout-title > .callout-icon { background: color-mix(in srgb, var(--cc) 18%, transparent) !important; box-shadow: none !important; transform: none !important; width: auto !important; height: auto !important; border-radius: 7px !important; padding: 4px !important; box-sizing: content-box !important; }
+.callout[data-callout-metadata~="barrier"] > .callout-title > .callout-icon :is(svg, .svg-icon) { color: var(--cc) !important; transform: none !important; }
+.callout[data-callout-metadata~="barrier"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+
+/* ============ QUESTION ============ */
+/* query → glass: solid surface, flat ? chip, faint accent watermark (was dashed crate + glossy roundel) */
+.callout[data-callout-metadata~="query"] { overflow: hidden; }
+.callout[data-callout-metadata~="query"] > .callout-title { align-items: center !important; }
+.callout[data-callout-metadata~="query"] > .callout-title > .callout-icon { background: color-mix(in srgb, var(--cc) 18%, transparent) !important; box-shadow: none !important; border-radius: 7px !important; padding: 4px !important; box-sizing: content-box !important; }
+.callout[data-callout-metadata~="query"] > .callout-title > .callout-icon :is(svg, .svg-icon) { color: var(--cc) !important; }
+.callout[data-callout-metadata~="query"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+.callout[data-callout-metadata~="query"]::after { content: "?"; position: absolute; right: 10px; bottom: -34px; font-family: var(--mwg-font-mono); font-weight: 700; font-size: 120px; line-height: 1; color: var(--cc); opacity: .06; pointer-events: none; }
+/* tag - specimen tag, object notch + hole (TYPE-LOCKED: infobox/tags use "tag") */
+.callout:is([data-callout="question"],[data-callout="help"],[data-callout="faq"])[data-callout-metadata~="tag"] { border-radius: 4px; padding-left: 42px; clip-path: polygon(18px 0, 100% 0, 100% 100%, 18px 100%, 0 50%); }
+.callout:is([data-callout="question"],[data-callout="help"],[data-callout="faq"])[data-callout-metadata~="tag"] > .callout-title > .callout-icon { display: none; }
+.callout:is([data-callout="question"],[data-callout="help"],[data-callout="faq"])[data-callout-metadata~="tag"]::before { content: ""; position: absolute; left: 23px; top: 50%; transform: translateY(-50%); width: 9px; height: 9px; border-radius: 50%; background: var(--mwg-pane); box-shadow: inset 0 0 0 1.5px var(--mwg-border-strong); }
+.callout:is([data-callout="question"],[data-callout="help"],[data-callout="faq"])[data-callout-metadata~="tag"] .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* ponder - marginal query, pen hand */
+.callout[data-callout-metadata~="ponder"] > .callout-title { border-bottom: 0 !important; }
+.callout[data-callout-metadata~="ponder"] > .callout-title > .callout-icon { display: none; }
+.callout[data-callout-metadata~="ponder"] > .callout-title::before { content: "?"; color: var(--cc); font-size: 1.4em; line-height: .7; margin-right: 4px; }
+.callout[data-callout-metadata~="ponder"] .callout-title-inner { font-family: var(--mwg-font-body) !important; font-style: italic !important; font-weight: 400 !important; text-transform: none !important; letter-spacing: 0 !important; font-size: 14px !important; color: var(--cc) !important; }
+
+/* ============ DANGER ============ */
+/* condemn → glass: stern full accent frame + flat icon chip (was condemned-notice crack/X + 8px side-stripe) */
+.callout[data-callout-metadata~="condemn"] { border: 2px solid var(--cc); }
+.callout[data-callout-metadata~="condemn"] > .callout-title { align-items: center !important; }
+.callout[data-callout-metadata~="condemn"] > .callout-title > .callout-icon { background: color-mix(in srgb, var(--cc) 18%, transparent) !important; border: 0 !important; box-shadow: none !important; transform: none !important; border-radius: 7px !important; padding: 4px !important; box-sizing: content-box !important; }
+.callout[data-callout-metadata~="condemn"] > .callout-title > .callout-icon :is(svg, .svg-icon) { color: var(--cc) !important; }
+.callout[data-callout-metadata~="condemn"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* fragile → glass: soft accent-tint frame + warning glyph prefix (was dashed crate) */
+.callout[data-callout-metadata~="fragile"] { border: 1px solid color-mix(in srgb, var(--cc) 40%, var(--mwg-border-2)); background: color-mix(in srgb, var(--cc) 9%, var(--mwg-pane-2)); }
+.callout[data-callout-metadata~="fragile"] > .callout-title > .callout-icon { display: none; }
+.callout[data-callout-metadata~="fragile"] .callout-title-inner::before { content: "\26A0  "; color: var(--cc); }
+.callout[data-callout-metadata~="fragile"] .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* klaxon → glass: double accent rule + flat pulsing alarm dot (was glossy radial dot) */
+.callout[data-callout-metadata~="klaxon"] { border: 0; border-radius: 0; background: transparent; box-shadow: none; border-top: 3px double var(--cc); border-bottom: 3px double var(--cc); }
+.callout[data-callout-metadata~="klaxon"] > .callout-title > .callout-icon { width: 14px; height: 14px; border-radius: 50% !important; background: var(--cc) !important; animation: da-pulse 1.8s ease-in-out infinite; }
+.callout[data-callout-metadata~="klaxon"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+.callout[data-callout-metadata~="klaxon"] > .callout-title > .callout-icon :is(svg, .svg-icon) { display: none; }
+@keyframes da-pulse { 0%,100% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--cc) 22%, transparent), 0 0 10px -2px var(--cc); } 50% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--cc) 8%, transparent), 0 0 18px 0 var(--cc); } }
+
+/* ============ EXAMPLE ============ */
+/* specimen → glass: drop parchment paper-noise, keep faint accent grid + brackets + CAT. label */
+.callout[data-callout-metadata~="specimen"] { background-color: var(--mwg-pane-2); background-image: repeating-linear-gradient(0deg, transparent 0 17px, color-mix(in srgb, var(--cc) 6%, transparent) 17px 18px), repeating-linear-gradient(90deg, transparent 0 17px, color-mix(in srgb, var(--cc) 6%, transparent) 17px 18px); }
+.callout[data-callout-metadata~="specimen"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+.callout[data-callout-metadata~="specimen"] > .callout-title { position: relative; }
+.callout[data-callout-metadata~="specimen"] > .callout-title::after { content: "CAT."; position: absolute; top: 0; right: 0; font-family: var(--mwg-font-mono); font-size: 10px; letter-spacing: .1em; color: var(--cc); }
+.callout[data-callout-metadata~="specimen"]::before, .callout[data-callout-metadata~="specimen"]::after { content: ""; position: absolute; width: 14px; height: 14px; border: 1.5px solid var(--cc); opacity: .6; }
+.callout[data-callout-metadata~="specimen"]::before { left: 6px; bottom: 6px; border-right: 0; border-top: 0; }
+.callout[data-callout-metadata~="specimen"]::after { right: 6px; bottom: 6px; border-left: 0; border-top: 0; }
+/* plate - figure-plate double frame, stamp Pl. (TYPE-LOCKED: fig uses "plate") */
+.callout:is([data-callout="example"])[data-callout-metadata~="plate"] { padding: 18px; }
+.callout:is([data-callout="example"])[data-callout-metadata~="plate"]::after { content: ""; position: absolute; inset: 7px; border: 1px solid color-mix(in srgb, var(--cc) 40%, transparent); border-radius: 5px; pointer-events: none; }
+.callout:is([data-callout="example"])[data-callout-metadata~="plate"] .callout-title-inner::before { content: "PL. \2009"; font-family: var(--mwg-font-mono); color: var(--cc); }
+.callout:is([data-callout="example"])[data-callout-metadata~="plate"] .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* tray - boxed tray + compartment divider, object */
+.callout[data-callout-metadata~="tray"] { border: 1px solid var(--cc); border-left-width: 1px; }
+.callout[data-callout-metadata~="tray"] > .callout-content { border-top: 1px dashed color-mix(in srgb, var(--cc) 40%, transparent); padding-top: 8px; margin-top: 2px; }
+.callout[data-callout-metadata~="tray"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+
+/* ============ TODO ============ */
+/* checklist - ruled checklist with leading boxes */
+.callout[data-callout-metadata~="checklist"] > .callout-content ul { list-style: none; padding-left: 4px; }
+.callout[data-callout-metadata~="checklist"] > .callout-content li { position: relative; padding-left: 26px; }
+.callout[data-callout-metadata~="checklist"] > .callout-content li::before { content: ""; position: absolute; left: 0; top: .25em; width: 14px; height: 14px; border-radius: 3px; border: 1.5px solid var(--cc); }
+.callout[data-callout-metadata~="checklist"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+/* manifest - manifest sheet with line numbers (TYPE-LOCKED: infobox uses "manifest") */
+.callout:is([data-callout="todo"])[data-callout-metadata~="manifest"] { padding-left: 46px; }
+.callout:is([data-callout="todo"])[data-callout-metadata~="manifest"]::before { content: ""; position: absolute; left: 38px; top: 14px; bottom: 14px; width: 1px; background: var(--mwg-border-2); }
+.callout:is([data-callout="todo"])[data-callout-metadata~="manifest"] > .callout-content ol { margin: 0; padding: 0; list-style: none; counter-reset: m; }
+.callout:is([data-callout="todo"])[data-callout-metadata~="manifest"] > .callout-content li { counter-increment: m; position: relative; padding-left: 8px; }
+.callout:is([data-callout="todo"])[data-callout-metadata~="manifest"] > .callout-content li::before { content: counter(m, decimal-leading-zero); position: absolute; left: -38px; width: 30px; text-align: right; font-family: var(--mwg-font-mono); font-size: .8em; color: var(--cc); opacity: .7; }
+.callout:is([data-callout="todo"])[data-callout-metadata~="manifest"] > .callout-title .callout-title-inner { font-family: var(--mwg-font-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; color: var(--cc); }
+
+/* reduced motion: keep the look, drop the movement */
+@media (prefers-reduced-motion: reduce) {
+    .callout[data-callout-metadata~="klaxon"] > .callout-title > .callout-icon { animation: none; }
+    .callout[data-callout-metadata~="flag"]:hover::after { animation: none; }
+    .callout:is([data-callout="note"],[data-callout="info"],[data-callout="tip"],[data-callout="success"],[data-callout="warning"],[data-callout="question"],[data-callout="danger"],[data-callout="example"],[data-callout="todo"]):is([data-callout-metadata~="card"],[data-callout-metadata~="pin"],[data-callout-metadata~="stamp"],[data-callout-metadata~="ribbon"],[data-callout-metadata~="barrier"]):hover { transform: none; }
+}
+
+/* ============================================================================
+   [DA gap-close]  Ports the remaining proposed (compare-HTML) treatments that
+   never shipped. Additive overrides (source order wins). Nothing existing
+   breaks: text utilities keep their class names, cards keep their casts.
+   ========================================================================== */
+
+/* 1 · display -> reference .at-display is a plain bold display run (NO drop-cap) */
+.markdown-rendered .at-display::first-letter {
+    font-size: inherit; line-height: inherit; color: inherit; float: none;
+    margin: 0; padding: 0; border: 0; background: none; box-shadow: none; font-weight: inherit;
+}
+
+/* 2 · lead -> italic; at-gloss = reference .at-gloss: small mono faint label block
+   sitting above the lead (NOT a handwritten margin note). */
+.markdown-rendered .at-lead { font-style: italic; }
+.markdown-rendered .at-gloss {
+    display: block; float: none; width: auto; margin: 0 0 5px; transform: none; position: static;
+    font-family: var(--mwg-font-mono); font-style: normal; font-size: 9px; line-height: 1.4;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--mwg-faint);
+}
+.markdown-rendered .at-gloss::before { content: none; }
+
+/* 3 · stat -> reference .at-stat: mono blue figure, NO underline */
+.markdown-rendered .at-stat {
+    font-family: var(--mwg-font-mono); font-weight: 600; color: var(--mwg-accent); font-variant-numeric: tabular-nums;
+}
+
+/* 4 · section -> reference .cd-section is a plain glass card (no watermark / stitching) */
+.callout[data-callout="card"][data-callout-metadata*="section"] { position: relative; }
+
+/* 5 · profile -> reference .cd-profile: CENTERED, avatar centered, no seal / stitching */
+.callout[data-callout="card"][data-callout-metadata*="profile"] { text-align: center; }
+.callout[data-callout="card"][data-callout-metadata*="profile"] > .callout-content { text-align: center; }
+.callout[data-callout="card"][data-callout-metadata*="profile"] > .callout-content img { display: block; margin: 0 auto 12px; }
+
+/* 6 · honor -> reference .cd-honor: LEFT-aligned, blockquote with blue left rule, no star */
+.callout[data-callout="card"][data-callout-metadata*="honor"] { position: relative; text-align: left; }
+.callout[data-callout="card"][data-callout-metadata*="honor"] blockquote {
+    font-family: var(--mwg-font-heading); font-style: italic; font-size: 1.05em;
+    border-left: 2px solid var(--mwg-accent) !important; background: none !important;
+    margin: 10px 0; padding: 0 0 0 13px;
+}
+.callout[data-callout="card"][data-callout-metadata*="honor"] > .callout-content > p:last-child {
+    font-family: var(--mwg-font-mono); font-size: .9em; color: var(--mwg-muted);
+}
+.callout[data-callout="card"][data-callout-metadata*="honor"] > .callout-content > p:last-child strong { color: var(--mwg-accent); }
+
+/* 9 · card hover -> add the proposed paper lift (was shadow only); skip the hero banner */
+.callout[data-callout="card"]:not([data-callout-metadata*="hero"]) { transition: transform .24s var(--mwg-ease), box-shadow .24s var(--mwg-ease), border-color .24s var(--mwg-ease); }
+.callout[data-callout="card"]:not([data-callout-metadata*="hero"]):hover { transform: translateY(-5px); }
+
+/* ============================================================================
+   [DA gap-close round 2]  section stitching · profile avatar left · honor light
+   ========================================================================== */
+
+/* profile -> centered avatar (reference .cd-profile is centered; no hard-left override) */
+.callout[data-callout="card"][data-callout-metadata*="profile"] > .callout-content p:has(img) { text-align: center; margin: 0; }
+
+/* honor -> reference .cd-honor: theme glass surface, blue kicker, light name, blue-rule quote */
+.callout[data-callout="card"][data-callout-metadata*="honor"] {
+    background: var(--mwg-pane-2) !important;
+    color: var(--mwg-text) !important;
+    border-color: color-mix(in srgb, var(--mwg-accent) 35%, transparent) !important;
+}
+.callout[data-callout="card"][data-callout-metadata*="honor"] .callout-content > h6:first-child {
+    background: none !important; color: var(--mwg-accent) !important; padding: 0 !important; border-radius: 0 !important;
+    font-family: var(--mwg-font-mono); letter-spacing: .16em; font-size: .8em;
+}
+.callout[data-callout="card"][data-callout-metadata*="honor"] :is(h2, h3) { color: var(--mwg-text-strong) !important; }
+.callout[data-callout="card"][data-callout-metadata*="honor"] blockquote { color: var(--mwg-text-strong) !important; }
+.callout[data-callout="card"][data-callout-metadata*="honor"] strong { font-size: 1em !important; }
+.callout[data-callout="card"][data-callout-metadata*="honor"] hr { border-top-color: var(--mwg-border-2) !important; }

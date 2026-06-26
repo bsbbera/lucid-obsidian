@@ -88,6 +88,29 @@ Custom gradient ramp: <span class="at-gradient at-xl" style="--grad: linear-grad
 >
 > **[Read the guide →](https://obsidian.md)** [GitHub](https://github.com/)
 
+### Hero (grid) — blueprint banner that follows the mode
+> [!card|hero grid spanfull]
+> ###### NEW IN 2.0 · BLUEPRINT
+> # The grid *tracks* your light/dark mode.
+> `grid` paints the blueprint overlay on the page-mode panel; add `dark` to drop it on the inverted one.
+
+### The `dark` switch — invert against the page
+Add `dark` to any card or callout and its panel flips against the current mode (deep in light, bright in dark). No `dark` = it follows the theme.
+> [!grid|cols2]
+>
+> > [!card]
+> > ###### DEFAULT
+> > ### Follows the *theme*
+> > Frosted glass — dark in dark mode, bright in light mode.
+>
+> > [!card|dark]
+> > ###### NEW · v2
+> > ### Opposes the *theme*
+> > One keyword inverts the panel. Works on every card and callout.
+
+> [!warning|dark] Inverted callout
+> Casts honour the switch too — this warning sits on the opposite-mode panel.
+
 ### Card width distribution (`wN`)
 Distribute cards by ratio, like multi-column notes — add `w1…w10` to each card in a grid.
 > [!grid]

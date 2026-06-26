@@ -1,108 +1,100 @@
-# Lucid
+<div align="center">
 
-A clean, **Apple-style frosted-glass** Obsidian theme — translucent cards with real backdrop blur, a calm
-**blue accent** with **teal italics**, and crisp **Segoe UI** typography. Dark-first with a bright light
-variant. Everything resolves through `--mwg-*` design tokens, so a single accent picker recolours the
-whole theme.
+# ◇ Lucid
 
-Its signature is a **webpage-like card system** you compose in plain Markdown, plus reusable text
-utilities so any run of text can be restyled inline — including an **Apple-style gradient text** class.
+### A webpage for every note.
 
-> **Companion theme:** [Atelier](https://github.com/bsbbera/atelier-obsidian) shares the *same* card /
-> column / utility syntax. A note authored for one renders with identical layout in the other — only the
-> skin (warm paper + coral + serif) changes.
+*An Apple-style frosted-glass Obsidian theme — translucent cards with real backdrop blur, a calm **blue** accent with **teal** italics, an **Apple-style gradient text**, and crisp **Segoe UI** throughout. Dark-first, with a bright light variant.*
 
-![screenshot](screenshot.png)
+![version](https://img.shields.io/badge/version-2.0.0-3d8fe6?style=flat-square)
+![obsidian](https://img.shields.io/badge/Obsidian-1.5.0%2B-4ecdc4?style=flat-square)
+![style settings](https://img.shields.io/badge/Style_Settings-ready-6aa9ef?style=flat-square)
+![license](https://img.shields.io/badge/license-MIT-9bb4cf?style=flat-square)
 
-> ▶ **Try the demo:** paste **[EXAMPLES.md](EXAMPLES.md)** into a note (reading view, Lucid selected)
-> to see every feature — cards, `wN` ratios, named step icons, infobox, multi-column, code blocks.
+![Lucid theme screenshot](screenshot.png)
+
+</div>
 
 ---
 
-## Install
+> **What it is.** Lucid turns plain Markdown into something that reads like a product page — hero banners, frosted cards, gradient text, infoboxes, multi-column layouts and 47 semantic callout casts — all from ordinary Obsidian callouts. One blue accent, two glass modes, zero plugins required for the look.
 
-**From Obsidian (once published):** Settings → Appearance → Themes → **Manage** → search **Lucid**.
+## ✦ Two modes
 
-**Manually:** copy `manifest.json` + `theme.css` into `<vault>/.obsidian/themes/Lucid/`, then pick
-**Lucid** under Settings → Appearance.
-
-> Requires Obsidian 1.5.0+. Install the **Style Settings** plugin to customise colours, fonts, sizes, the
-> default-style dropdowns, the gradient ramp, and the glass blur. Lucid's defaults use **system fonts
-> (Segoe UI)**, so it works offline out of the box.
-
----
-
-## Tutorial
-
-### 1. Cards — a layout + a style
-Wrap any number of cards in `> [!grid]`; they flow into as many columns as fit and reflow on resize.
-
-```md
-> [!grid]
-> > [!card] One
-> > [!card] Two
-> > [!card] Three
-```
-- Lock columns: `> [!grid|cols2]` … `cols6`.  · Span: `span2`, `span3`, `spanfull`.  · Grids nest.
-- **Distribute by ratio:** give cards `w1`…`w10` to split a row by weight — e.g. `> [!card|w3]` + `[!card|w7]` = **30 / 70** (like `[!col|wN]`; auto ratio mode, stacks on mobile).
-
-> **Nesting rule:** child cards use `>>` and must be separated by a blank `>` line.
-
-Pick a card **style** with `> [!card|<style>]` (bare `[!card]` follows the *Default card style* dropdown):
-
-| Style | Look |
+| | |
 |---|---|
-| `skill` | label, big title, dark command bar, blue `01 02 03` steps |
-| `section` | field card — frosted surface, accent top-stripe + kicker (great in `cols3`/`cols4`) |
-| `step` | ringed icon + `###### LABEL` + big number/title; pick the glyph with `icon-*` |
-| `profile` | centered avatar, label, name, link |
-| `honor` | dark — rank badge, ringed avatar, pull-quote, big stats |
-| `channels` | dark — table of `#channel \| LABEL` rows |
-| `hero` | big display heading + buttons; add `split` for a side-by-side hero |
+| **Light** | Bright off-white, deep ink text, blue rules. Daylight reading. |
+| **Dark** *(default)* | Calm `#0d0f14` glass with violet/teal glow, frosted translucent cards. The signature mode. |
 
-**Surfaces:** add `dark` or `accent`. **Buttons:** `**[Label](url)**` → filled, `[Label](url)` → outline.
-**Emphasis:** `*italic*` words render in the teal emphasis colour.
-**Step icons:** add an `icon-*` token to a `step` card — `icon-search · file · chat · list · book · cloud · database · layers` (e.g. `> [!card|step icon-cloud]`).
+Switch with Obsidian's normal light/dark toggle — the whole palette pivots on one set of `--mwg-*` tokens, so a single accent picker recolours everything.
 
-> A `hero` card directly above a `[!grid]` of `step` cards automatically **fuses** with it into one seamless slab.
+## ✦ New in 2.0 — the `dark` switch & `grid` banner
 
-Frosted glass (translucency + backdrop blur) is applied to light/default cards & infoboxes; dark
-honor/CTA surfaces stay solid for legibility.
+- **`dark` now inverts the page.** Add `dark` to *any* card or callout and its panel flips against the current mode — a deep slab in light mode, a bright one in dark mode. No `dark` = it simply follows the theme. One keyword, every element.
+- **`grid` is its own keyword.** A blueprint-grid banner overlay that honours the light/dark switch. `[!card|hero grid]` paints the grid on the page-mode panel; add `dark` to drop it on the inverted one.
 
-### 2. Multi-column notes — `[!columns]` + `[!col|wN]`
 ```md
-> [!columns|ruled]
-> > [!col|w3]
-> > ### Narrow
-> > [!col|w7]
-> > ### Wide
+> [!card|hero grid spanfull]
+> ###### FOUR STEPS · ANY SKILL LEVEL
+> # From zero to *merged*, in an afternoon.
+> Blueprint grid that tracks your light/dark mode.
+
+> [!card|profile dark]
+> ###### INVERTED
+> ### Opposes the theme
 ```
-Weights `w1…w10`; add `ruled` for dividers.
 
-### 3. Infobox — `[!infobox|right]`
-A wiki-style frosted text infobox that floats `left`/`right`/`center` with text wrapping beside it.
+## ✦ What you get
 
-### 4. Reusable text utilities (inline HTML)
-`at-kicker` · `at-badge`(`.ghost`) · `at-display` · `at-lead` · `at-stat` · `at-mark` ·
-**`at-gradient`** (Apple-style gradient text — override the ramp per use with `style="--grad: …"`, or set
-the stops in Style Settings).
+- **A card system** — `hero · skill · section · step · profile · honor · channels`, composed in `> [!grid|colsN]`, reflowing on resize, distributable by `w1…w10` ratio.
+- **The `dark` / `grid` modifiers** — invert any panel against the page, or drop a blueprint-grid banner that follows the mode.
+- **47 semantic casts** — stamps, flags, tablets and tags for every callout type, each honouring the dark switch.
+- **Editorial elements** — frosted infoboxes that float and wrap text, multi-column notes, code blocks, illuminated quotes, ornamented dividers.
+- **Inline typography** — `at-kicker · at-lead · at-display · at-stat · at-mark · at-badge`, plus **`at-gradient`** Apple-style gradient text with a per-use ramp.
+- **Style Settings** — accent & colours, italic/emphasis colour, font dropdowns, width, roundness, per-element default styles, the gradient ramp, glass blur, and animations.
 
-**Inline font size:** `at-xs … at-4xl`, or exact `at-fs` + `style="--fs: 30px"`. They **compose** —
-e.g. `class="at-gradient at-2xl"`.
+> **Companion theme:** [Atelier](https://github.com/bsbbera/atelier-obsidian) shares the *same* card / column / cast / utility syntax — including the `dark` switch and `grid` banner. A note authored for one renders with identical layout in the other; only the skin (warm paper + copper + serif) changes.
 
-### 5. Tags, headings, body size
-Category-tinted tags; per-heading `#center`/`#right`/`#left`; per-note body size via `cssclasses:
-[text-lg]` or the Style Settings slider.
+## ✦ Install
 
-See **[EXAMPLES.md](EXAMPLES.md)** for a ready-to-paste note exercising every feature.
+**From Obsidian** *(once published)* — Settings → Appearance → Themes → **Manage** → search **Lucid**.
 
----
+**Manually** — copy `manifest.json` + `theme.css` into `<vault>/.obsidian/themes/Lucid/`, then select **Lucid** under Settings → Appearance.
 
-## Customising
-**Settings → Style Settings → Lucid** — accent & colours, **italic/emphasis colour**, **font dropdowns**,
-note width, roundness, default card style, **card glass blur**, **gradient ramp (4 stops + angle)**, body
-size, and animations.
+> Requires Obsidian **1.5.0+**. Install the **Style Settings** plugin to customise everything. Lucid's defaults use **system fonts (Segoe UI)**, so it works offline out of the box.
 
-## Credits
-- Fonts: Segoe UI (system); JetBrains Mono for code.
-- License: [MIT](LICENSE).
+## ✦ Sixty-second start
+
+```md
+> [!grid|cols3]
+>
+> > [!card] First
+> > A frosted-glass card. Add as many as you like; the grid wraps them into rows.
+>
+> > [!card] Second
+> > Resize the pane — columns reflow like a web page.
+>
+> > [!card|dark] Third
+> > Add `dark` and this one inverts against the page.
+
+> [!note] Note
+> A standard callout, themed with a mono small-caps title.
+```
+
+That's three of Lucid's elements. There are dozens more.
+
+## ✦ The demo note
+
+Paste **[EXAMPLES.md](EXAMPLES.md)** into a note (reading view, Lucid selected) to exercise every feature — cards, `wN` ratios, named step icons, the `dark`/`grid` modifiers, infobox, multi-column, code blocks, casts.
+
+## ✦ Customising
+
+**Settings → Style Settings → Lucid** — accent & colours, italic/emphasis colour, font dropdowns, note width, roundness, default card style, card glass blur, gradient ramp (4 stops + angle), body size, and animations.
+
+## ✦ Credits
+
+- Aesthetic: Apple-style frosted glass & product-page editorial.
+- Fonts: **Segoe UI** (system); **JetBrains Mono** for code.
+- License: **[MIT](LICENSE)**.
+
+<div align="center"><sub>Built for Obsidian · <code>--mwg-*</code> token system · made by <a href="https://github.com/bsbbera">Subhadip</a></sub></div>
